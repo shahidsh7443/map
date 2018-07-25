@@ -1,0 +1,213 @@
+﻿#mapwrapper {
+	max-width: 1920px;
+	margin: 0 auto;
+	padding: 0 0;
+	background-color: transparent;
+	min-width: 220px;
+	background-image: url('/wikilogy/wp-content/uploads/2017/09/tjmahal.jpg');
+	background-size: cover;
+	box-shadow: inset 0 0 0 2333px rgba(0,0,0,0.8);
+}
+#map_base svg {
+	max-height: 100%;
+	width: 100%;
+	margin: 0;
+}
+@media screen and (max-width: 320px){
+	#map_base svg {
+		height:220px;
+	}
+}
+@media screen and (max-width: 400px) and (min-width: 321px) {
+	#map_base svg {
+		height:330px;
+	}
+}
+@media screen and (max-width: 480px) and (min-width: 401px) {
+	#map_base svg {
+		height:380px;
+	}
+}
+@media screen and (max-width: 568px) and (min-width: 481px) {
+	#map_base svg {
+		height:470px;
+	}
+}
+@media screen and (max-width: 685px) and (min-width: 569px) {
+	#map_base svg {
+		height:560px;
+	}
+}
+@media screen and (max-width: 767px) and (min-width: 686px) {
+	#map_base svg {
+		height:680px;
+	}
+}
+@media screen and (min-width: 768px) {
+	#map_base svg {
+		height:760px;
+	}
+}
+#map-tip {
+    font: 14px/16px Trebuchet MS, Helvetica, Arial, sans-serif;
+    display: none;
+    padding: 3px;
+    border: 1px solid #EBECED;
+    color: #edeef0;
+    z-index: 1000;
+    float: left;
+    position: absolute;
+    /*gradient color*/
+    background: rgb(73, 73, 73);
+    background: -moz-linear-gradient(top, rgba(73, 73, 73, 1) 0%, rgba(101, 101, 101, 1) 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(73, 73, 73, 1)), color-stop(100%, rgba(101, 101, 101, 1)));
+    background: -webkit-linear-gradient(top, rgba(73, 73, 73, 1) 0%, rgba(101, 101, 101, 1) 100%);
+    background: -o-linear-gradient(top, rgba(73, 73, 73, 1) 0%, rgba(101, 101, 101, 1) 100%);
+    background: -ms-linear-gradient(top, rgba(73, 73, 73, 1) 0%, rgba(101, 101, 101, 1) 100%);
+    background: linear-gradient(to bottom, rgba(73, 73, 73, 1) 0%, rgba(101, 101, 101, 1) 100%);
+    word-break: keep-all;
+    white-space: nowrap;
+		box-shadow:1px 2px 4px rgba(0, 0, 0, 0.5);
+	-moz-box-shadow:2px 3px 6px rgba(0, 0, 0, 0.5);
+	-webkit-box-shadow:2px 3px 6px rgba(0, 0, 0, 0.5);
+}
+#map-tip p {
+	margin: 0!important;
+}
+#map-tip img {
+	float: left;
+	padding: 3px;
+}
+img.logoimg {
+    position: absolute;
+    padding: 0px 15px;
+}
+div#map_base {
+    padding-top: 25px;
+}
+#map_base .row
+{
+	margin: 0px;
+}
+#srch {
+    width: 130px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: white;
+    background-image: url('searchicon.png');
+    background-position: 10px 10px;
+    background-repeat: no-repeat;
+    padding: 12px 20px 12px 40px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+}
+
+#srch:focus {
+    width: 90%;
+}
+#sbar {
+    position: absolute;
+    right: 0;
+}
+
+.fdata {
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    display: table;
+}
+.fdata h3 {
+    margin-top: 5px;
+		    border-bottom: 1px dotted;
+			}
+.mform
+{
+	margin-top: 25px;
+    padding: 25px;
+    background: #dbd9d9;
+		border-radius: 5px;
+}
+.mform input {
+    width: 100%;
+    height: 35px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    padding-left: 5px;
+}
+.mform #desc {
+    border-radius: 5px;
+}
+.mform #link
+{
+	margin-top: 15px;
+}
+.sbutton
+{
+	text-align: center;
+}
+#sbt
+{
+	width: 25%;
+	    color: #ffffff;
+	    background: #F44336;
+	    font-size: 14px;
+	    font-weight: 600;
+}
+#nvbar
+{
+	margin-bottom: 0px;
+}
+#roll
+{
+	overflow-y: scroll;
+}
+body::-webkit-scrollbar {
+    width: 10px;
+}
+
+body::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.8);
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: darkgrey;
+  outline: 1px solid slategrey;
+		border-radius: 5px;
+}
+#roll::-webkit-scrollbar {
+      display: none;
+  }
+	.image {
+	  display: block;
+	  width: 100%;
+	  height: auto;
+	}
+
+	#cty .overlay {
+	  position: absolute;
+	  top: 0;
+	  bottom: 0;
+	  left: 0;
+	  right: 0;
+	  height: 100%;
+	  width: 100%;
+	  background-color: rgba(0,0,0,0.5);
+		    opacity: 1;
+	}
+	.text {
+	  color: white;
+	  font-size: 20px;
+	  position: absolute;
+	  top: 50%;
+	  left: 50%;
+	  -webkit-transform: translate(-50%, -50%);
+	  -ms-transform: translate(-50%, -50%);
+	  transform: translate(-50%, -50%);
+	  text-align: center;
+	}
+#cty .ctcl
+{
+	margin-bottom: 10px;
+}
