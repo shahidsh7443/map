@@ -1,0 +1,73 @@
+{
+   "results" : [
+      {
+         "address_components" : [
+            {
+               "long_name" : "Lalbagh Botanical Garden",
+               "short_name" : "Lalbagh Botanical Garden",
+               "types" : [ "establishment", "park", "point_of_interest" ]
+            },
+            {
+               "long_name" : "Mavalli",
+               "short_name" : "Mavalli",
+               "types" : [ "neighborhood", "political" ]
+            },
+            {
+               "long_name" : "Mavalli",
+               "short_name" : "Mavalli",
+               "types" : [ "political", "sublocality", "sublocality_level_1" ]
+            },
+            {
+               "long_name" : "Bengaluru",
+               "short_name" : "Bengaluru",
+               "types" : [ "locality", "political" ]
+            },
+            {
+               "long_name" : "Bangalore Urban",
+               "short_name" : "Bangalore Urban",
+               "types" : [ "administrative_area_level_2", "political" ]
+            },
+            {
+               "long_name" : "Karnataka",
+               "short_name" : "KA",
+               "types" : [ "administrative_area_level_1", "political" ]
+            },
+            {
+               "long_name" : "India",
+               "short_name" : "IN",
+               "types" : [ "country", "political" ]
+            },
+            {
+               "long_name" : "560004",
+               "short_name" : "560004",
+               "types" : [ "postal_code" ]
+            }
+         ],
+         "formatted_address" : "Lalbagh Botanical Garden, Mavalli, Bengaluru, Karnataka 560004, India",
+         "geometry" : {
+            "location" : {
+               "lat" : 12.9507432,
+               "lng" : 77.5847773
+            },
+            "location_type" : "GEOMETRIC_CENTER",
+            "viewport" : {
+               "northeast" : {
+                  "lat" : 12.9520921802915,
+                  "lng" : 77.58612628029151
+               },
+               "southwest" : {
+                  "lat" : 12.9493942197085,
+                  "lng" : 77.58342831970849
+               }
+            }
+         },
+         "place_id" : "ChIJHdPykcEVrjsRIr4v35kLEY4",
+         "plus_code" : {
+            "compound_code" : "XH2M+7W Bengaluru, Karnataka, India",
+            "global_code" : "7J4VXH2M+7W"
+         },
+         "types" : [ "establishment", "park", "point_of_interest" ]
+      }
+   ],
+   "status" : "OK"
+}

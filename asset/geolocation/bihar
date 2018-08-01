@@ -1,0 +1,49 @@
+{
+   "results" : [
+      {
+         "address_components" : [
+            {
+               "long_name" : "Bihar",
+               "short_name" : "BR",
+               "types" : [ "administrative_area_level_1", "political" ]
+            },
+            {
+               "long_name" : "India",
+               "short_name" : "IN",
+               "types" : [ "country", "political" ]
+            }
+         ],
+         "formatted_address" : "Bihar, India",
+         "geometry" : {
+            "bounds" : {
+               "northeast" : {
+                  "lat" : 27.5213199,
+                  "lng" : 88.28975199999999
+               },
+               "southwest" : {
+                  "lat" : 24.286278,
+                  "lng" : 83.31486509999999
+               }
+            },
+            "location" : {
+               "lat" : 25.0960742,
+               "lng" : 85.31311939999999
+            },
+            "location_type" : "APPROXIMATE",
+            "viewport" : {
+               "northeast" : {
+                  "lat" : 27.5213199,
+                  "lng" : 88.28975199999999
+               },
+               "southwest" : {
+                  "lat" : 24.286278,
+                  "lng" : 83.31486509999999
+               }
+            }
+         },
+         "place_id" : "ChIJA2m78ERY7TkRJeO6G-0_rVc",
+         "types" : [ "administrative_area_level_1", "political" ]
+      }
+   ],
+   "status" : "OK"
+}

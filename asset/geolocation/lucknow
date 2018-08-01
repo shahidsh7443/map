@@ -1,0 +1,59 @@
+{
+   "results" : [
+      {
+         "address_components" : [
+            {
+               "long_name" : "Lucknow",
+               "short_name" : "Lucknow",
+               "types" : [ "locality", "political" ]
+            },
+            {
+               "long_name" : "Lucknow",
+               "short_name" : "Lucknow",
+               "types" : [ "administrative_area_level_2", "political" ]
+            },
+            {
+               "long_name" : "Uttar Pradesh",
+               "short_name" : "UP",
+               "types" : [ "administrative_area_level_1", "political" ]
+            },
+            {
+               "long_name" : "India",
+               "short_name" : "IN",
+               "types" : [ "country", "political" ]
+            }
+         ],
+         "formatted_address" : "Lucknow, Uttar Pradesh, India",
+         "geometry" : {
+            "bounds" : {
+               "northeast" : {
+                  "lat" : 26.9641146,
+                  "lng" : 81.0544895
+               },
+               "southwest" : {
+                  "lat" : 26.7332694,
+                  "lng" : 80.830536
+               }
+            },
+            "location" : {
+               "lat" : 26.8466937,
+               "lng" : 80.94616599999999
+            },
+            "location_type" : "APPROXIMATE",
+            "viewport" : {
+               "northeast" : {
+                  "lat" : 26.9641146,
+                  "lng" : 81.0544895
+               },
+               "southwest" : {
+                  "lat" : 26.7332694,
+                  "lng" : 80.830536
+               }
+            }
+         },
+         "place_id" : "ChIJa7EyH5n9mzkR54uXCYm6zJM",
+         "types" : [ "locality", "political" ]
+      }
+   ],
+   "status" : "OK"
+}

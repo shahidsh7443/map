@@ -6,7 +6,7 @@
 	},
 	'map_1':{
 		'hover': 'ANDHRA PRADESH',  //region hover content
-		'url':'http://localhost/map/mapdata.php?q=andhra%20pradesh&id=1', //Goto URL
+		'url':'http://localhost/wikilogy/mpdata.php?q=Andhra_Pradesh&id=1', //Goto URL
 		'target':'same_window', //open link in new window:new_window, open in current window:same_window, or none for nothing.
 		'upColor':'#EBECED', //region color when page loads
 		'overColor':'#FFEE88', //region color when mouse hover
@@ -15,7 +15,7 @@
 	},
 	'map_2':{
 		'hover': 'ARUNACHAL PRADESH',
-		'url':'http://localhost/map/mapdata.php?q=arunachal%20pradesh&id=2',
+		'url':'http://localhost/wikilogy/mpdata.php?q=arunachal%20pradesh&id=2',
 		'target':'same_window',
 		'upColor':'#EBECED',
 		'overColor':'#FFEE88',
@@ -24,7 +24,7 @@
 	},
 	'map_3':{
 		'hover': 'ASSAM',
-		'url':'http://localhost/map/mapdata.php?q=asssam&id=3',
+		'url':'http://localhost/wikilogy/mpdata.php?q=asssam&id=3',
 		'target':'same_window',
 		'upColor':'#EBECED',
 		'overColor':'#FFEE88',
@@ -33,7 +33,7 @@
 	},
 	'map_4':{
 		'hover': 'BIHAR',
-		'url':'http://localhost/map/mapdata.php?q=bihar&id=4',
+		'url':'http://localhost/wikilogy/mpdata.php?q=bihar&id=4',
 		'target':'same_window',
 		'upColor':'#EBECED',
 		'overColor':'#FFEE88',
@@ -42,7 +42,7 @@
 	},
 	'map_5':{
 		'hover': 'CHHATTISGARH',
-		'url':'http://localhost/map/mapdata.php?q=chattisgarh&id=5',
+		'url':'http://localhost/wikilogy/mpdata.php?q=chattisgarh&id=5',
 		'target':'same_window',
 		'upColor':'#EBECED',
 		'overColor':'#FFEE88',
@@ -51,7 +51,7 @@
 	},
 	'map_6':{
 		'hover': 'GOA',
-		'url':'http://localhost/map/mapdata.php?q=goa&id=6',
+		'url':'http://localhost/wikilogy/mpdata.php?q=goa&id=6',
 		'target':'same_window',
 		'upColor':'#EBECED',
 		'overColor':'#FFEE88',
@@ -60,7 +60,7 @@
 	},
 	'map_7':{
 		'hover': 'GUJARAT',
-		'url':'http://localhost/map/mapdata.php?q=gujarat&id=7',
+		'url':'http://localhost/wikilogy/mpdata.php?q=gujarat&id=7',
 		'target':'same_window',
 		'upColor':'#EBECED',
 		'overColor':'#FFEE88',
@@ -69,7 +69,7 @@
 	},
 	'map_8':{
 		'hover': 'HARYANA',
-		'url':'http://localhost/map/mapdata.php?q=haryana&id=8',
+		'url':'http://localhost/wikilogy/mpdata.php?q=haryana&id=8',
 		'target':'same_window',
 		'upColor':'#EBECED',
 		'overColor':'#FFEE88',
@@ -78,7 +78,7 @@
 	},
 	'map_9':{
 		'hover': 'HIMACHAL PRADESH',
-		'url':'http://localhost/map/mapdata.php?q=himachal%20pradesh&id=9',
+		'url':'http://localhost/wikilogy/mpdata.php?q=himachal%20pradesh&id=9',
 		'target':'same_window',
 		'upColor':'#EBECED',
 		'overColor':'#FFEE88',
@@ -87,7 +87,7 @@
 	},
 	'map_10':{
 		'hover': 'JAMMU AND KASHMIR',
-		'url':'http://localhost/map/mapdata.php?q=jammu%20and%20kashmir&id=10',
+		'url':'http://localhost/wikilogy/mpdata.php?q=jammu%20and%20kashmir&id=10',
 		'target':'same_window',
 		'upColor':'#EBECED',
 		'overColor':'#FFEE88',
@@ -96,7 +96,7 @@
 	},
 	'map_11':{
 		'hover': 'JHARKHAND',
-		'url':'http://localhost/map/mapdata.php?q=jharkhand&id=11',
+		'url':'http://localhost/wikilogy/mpdata.php?q=jharkhand&id=11',
 		'target':'same_window',
 		'upColor':'#EBECED',
 		'overColor':'#FFEE88',
@@ -105,7 +105,7 @@
 	},
 	'map_12':{
 		'hover': 'KARNATAKA',
-		'url':'http://localhost/map/mapdata.php?q=karnataka&id=12',
+		'url':'http://localhost/wikilogy/mpdata.php?q=karnataka&id=12',
 		'target':'same_window',
 		'upColor':'#EBECED',
 		'overColor':'#FFEE88',
@@ -114,7 +114,7 @@
 	},
 	'map_13':{
 		'hover': 'KERALA',
-		'url':'http://localhost/map/mapdata.php?q=kerala&id=13',
+		'url':'http://localhost/wikilogy/mpdata.php?q=kerala&id=13',
 		'target':'same_window',
 		'upColor':'#EBECED',
 		'overColor':'#FFEE88',
@@ -123,7 +123,7 @@
 	},
 	'map_14':{
 		'hover': 'MADHYA PRADESH',
-		'url':'http://localhost/map/mapdata.php?q=madhya%20pradesh&id=14',
+		'url':'http://localhost/wikilogy/mpdata.php?q=madhya%20pradesh&id=14',
 		'target':'same_window',
 		'upColor':'#EBECED',
 		'overColor':'#FFEE88',
@@ -132,7 +132,7 @@
 	},
 	'map_15':{
 		'hover': 'MAHARASHTRA',
-		'url':'http://localhost/map/mapdata.php?q=maharashtra&id=15',
+		'url':'http://localhost/wikilogy/mpdata.php?q=maharashtra&id=15',
 		'target':'same_window',
 		'upColor':'#EBECED',
 		'overColor':'#FFEE88',
@@ -141,7 +141,7 @@
 	},
 	'map_16':{
 		'hover': 'MANIPUR',
-		'url':'http://localhost/map/mapdata.php?q=manipur&id=16',
+		'url':'http://localhost/wikilogy/mpdata.php?q=manipur&id=16',
 		'target':'same_window',
 		'upColor':'#EBECED',
 		'overColor':'#FFEE88',
@@ -150,7 +150,7 @@
 	},
 	'map_17':{
 		'hover': 'MEGHALAYA',
-		'url':'http://localhost/map/mapdata.php?q=meghalaya&id=17',
+		'url':'http://localhost/wikilogy/mpdata.php?q=meghalaya&id=17',
 		'target':'same_window',
 		'upColor':'#EBECED',
 		'overColor':'#FFEE88',
@@ -159,7 +159,7 @@
 	},
 	'map_18':{
 		'hover': 'MIZORAM',
-		'url':'http://localhost/map/mapdata.php?q=mizoram&id=18',
+		'url':'http://localhost/wikilogy/mpdata.php?q=mizoram&id=18',
 		'target':'same_window',
 		'upColor':'#EBECED',
 		'overColor':'#FFEE88',
@@ -168,7 +168,7 @@
 	},
 	'map_19':{
 		'hover': 'NAGALAND',
-		'url':'http://localhost/map/mapdata.php?q=nagalang&id=19',
+		'url':'http://localhost/wikilogy/mpdata.php?q=nagalang&id=19',
 		'target':'same_window',
 		'upColor':'#EBECED',
 		'overColor':'#FFEE88',
@@ -177,7 +177,7 @@
 	},
 	'map_20':{
 		'hover': 'ODISHA',
-		'url':'http://localhost/map/mapdata.php?q=odisha&id=20',
+		'url':'http://localhost/wikilogy/mpdata.php?q=odisha&id=20',
 		'target':'same_window',
 		'upColor':'#EBECED',
 		'overColor':'#FFEE88',
@@ -186,7 +186,7 @@
 	},
 	'map_21':{
 		'hover': 'PUNJAB',
-		'url':'http://localhost/map/mapdata.php?q=punjab&id=21',
+		'url':'http://localhost/wikilogy/mpdata.php?q=punjab&id=21',
 		'target':'same_window',
 		'upColor':'#EBECED',
 		'overColor':'#FFEE88',
@@ -195,7 +195,7 @@
 	},
 	'map_22':{
 		'hover': 'RAJASTHAN',
-		'url':'http://localhost/map/mapdata.php?q=rajasthan&id=22',
+		'url':'http://localhost/wikilogy/mpdata.php?q=rajasthan&id=22',
 		'target':'same_window',
 		'upColor':'#EBECED',
 		'overColor':'#FFEE88',
@@ -204,7 +204,7 @@
 	},
 	'map_23':{
 		'hover': 'SIKKIM',
-		'url':'http://localhost/map/mapdata.php?q=sikkim&id=23',
+		'url':'http://localhost/wikilogy/mpdata.php?q=sikkim&id=23',
 		'target':'same_window',
 		'upColor':'#EBECED',
 		'overColor':'#FFEE88',
@@ -213,7 +213,7 @@
 	},
 	'map_24':{
 		'hover': 'TAMIL NADU',
-		'url':'http://localhost/map/mapdata.php?q=tamil%20nadu&id=24',
+		'url':'http://localhost/wikilogy/mpdata.php?q=Tamil_Nadu&id=24',
 		'target':'same_window',
 		'upColor':'#EBECED',
 		'overColor':'#FFEE88',
@@ -222,7 +222,7 @@
 	},
 	'map_25':{
 		'hover': 'TELANGANA',
-		'url':'http://localhost/map/mapdata.php?q=telangana&id=25',
+		'url':'http://localhost/wikilogy/mpdata.php?q=telangana&id=25',
 		'target':'same_window',
 		'upColor':'#EBECED',
 		'overColor':'#FFEE88',
@@ -231,7 +231,7 @@
 	},
 	'map_26':{
 		'hover': 'TRIPURA',
-		'url':'http://localhost/map/mapdata.php?q=tripura&id=26',
+		'url':'http://localhost/wikilogy/mpdata.php?q=tripura&id=26',
 		'target':'same_window',
 		'upColor':'#EBECED',
 		'overColor':'#FFEE88',
@@ -240,7 +240,7 @@
 	},
 	'map_27':{
 		'hover': 'UTTAR PRADESH',
-		'url':'http://localhost/map/mapdata.php?q=uttar%20pradesh&id=27',
+		'url':'http://localhost/wikilogy/mpdata.php?q=lucknow&id=27',
 		'target':'same_window',
 		'upColor':'#EBECED',
 		'overColor':'#FFEE88',
@@ -249,7 +249,7 @@
 	},
 	'map_28':{
 		'hover': 'UTTARAKHAND',
-		'url':'http://localhost/map/mapdata.php?q=uttarakhand&id=28',
+		'url':'http://localhost/wikilogy/mpdata.php?q=uttarakhand&id=28',
 		'target':'same_window',
 		'upColor':'#EBECED',
 		'overColor':'#FFEE88',
@@ -258,7 +258,7 @@
 	},
 	'map_29':{
 		'hover': 'WEST BENGAL',
-		'url':'http://localhost/map/mapdata.php?q=west%20bengal&id=29',
+		'url':'http://localhost/wikilogy/mpdata.php?q=west%20bengal&id=29',
 		'target':'same_window',
 		'upColor':'#EBECED',
 		'overColor':'#FFEE88',
@@ -267,7 +267,7 @@
 	},
 	'map_30':{
 		'hover': 'ANDAMAN AND NICOBAR ISLANDS',
-		'url':'http://localhost/map/mapdata.php?q=andaman%20and%20nicobar%20island&id=30',
+		'url':'http://localhost/wikilogy/mpdata.php?q=andaman%20and%20nicobar%20island&id=30',
 		'target':'same_window',
 		'upColor':'#EBECED',
 		'overColor':'#FFEE88',
@@ -276,7 +276,7 @@
 	},
 	'map_31':{
 		'hover': 'CHANDIGARH',
-		'url':'http://localhost/map/mapdata.php?q=chandigarh&id=31',
+		'url':'http://localhost/wikilogy/mpdata.php?q=chandigarh&id=31',
 		'target':'same_window',
 		'upColor':'#EBECED',
 		'overColor':'#FFEE88',
@@ -285,7 +285,7 @@
 	},
 	'map_32':{
 		'hover': 'DADRA AND NAGAR HAVELI',
-		'url':'http://localhost/map/mapdata.php?q=dadra%20and%20nagar%haveli&id=32',
+		'url':'http://localhost/wikilogy/mpdata.php?q=dadra%20and%20nagar%haveli&id=32',
 		'target':'same_window',
 		'upColor':'#EBECED',
 		'overColor':'#FFEE88',
@@ -294,7 +294,7 @@
 	},
 	'map_33':{
 		'hover': 'DAMAN AND DIU',
-		'url':'http://localhost/map/mapdata.php?q=daman%20and%20diu&id=33',
+		'url':'http://localhost/wikilogy/mpdata.php?q=daman%20and%20diu&id=33',
 		'target':'same_window',
 		'upColor':'#EBECED',
 		'overColor':'#FFEE88',
@@ -303,7 +303,7 @@
 	},
 	'map_34':{
 		'hover': 'LAKSHADWEEP',
-		'url':'http://localhost/map/mapdata.php?q=lakshadweep&id=34',
+		'url':'http://localhost/wikilogy/mpdata.php?q=lakshadweep&id=34',
 		'target':'same_window',
 		'upColor':'#EBECED',
 		'overColor':'#FFEE88',
@@ -312,7 +312,7 @@
 	},
 	'map_35':{
 		'hover': 'NATIONAL CAPITAL TERRITORY OF DELHI',
-		'url':'http://localhost/map/mapdata.php?q=national%20capital%20territory%20of%20delhi&id=35',
+		'url':'http://localhost/wikilogy/mpdata.php?q=national%20capital%20territory%20of%20delhi&id=35',
 		'target':'same_window',
 		'upColor':'#EBECED',
 		'overColor':'#FFEE88',
@@ -321,7 +321,7 @@
 	},
 	'map_36':{
 		'hover': 'PUDUCHERRY',
-		'url':'http://localhost/map/mapdata.php?q=puducherry&id=36',
+		'url':'http://localhost/wikilogy/mpdata.php?q=puducherry&id=36',
 		'target':'new_window',
 		'upColor':'#EBECED',
 		'overColor':'#FFEE88',

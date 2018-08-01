@@ -1,0 +1,49 @@
+{
+   "results" : [
+      {
+         "address_components" : [
+            {
+               "long_name" : "Uttarakhand",
+               "short_name" : "UK",
+               "types" : [ "administrative_area_level_1", "political" ]
+            },
+            {
+               "long_name" : "India",
+               "short_name" : "IN",
+               "types" : [ "country", "political" ]
+            }
+         ],
+         "formatted_address" : "Uttarakhand, India",
+         "geometry" : {
+            "bounds" : {
+               "northeast" : {
+                  "lat" : 31.45461499999999,
+                  "lng" : 81.04463149999999
+               },
+               "southwest" : {
+                  "lat" : 28.710125,
+                  "lng" : 77.57860889999999
+               }
+            },
+            "location" : {
+               "lat" : 30.066753,
+               "lng" : 79.01929969999999
+            },
+            "location_type" : "APPROXIMATE",
+            "viewport" : {
+               "northeast" : {
+                  "lat" : 31.45461499999999,
+                  "lng" : 81.04463149999999
+               },
+               "southwest" : {
+                  "lat" : 28.710125,
+                  "lng" : 77.57860889999999
+               }
+            }
+         },
+         "place_id" : "ChIJCZwnAsLcCTkRBcCcaGM7xAc",
+         "types" : [ "administrative_area_level_1", "political" ]
+      }
+   ],
+   "status" : "OK"
+}

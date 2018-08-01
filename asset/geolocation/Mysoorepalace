@@ -1,0 +1,74 @@
+{
+   "results" : [
+      {
+         "address_components" : [
+            {
+               "long_name" : "Sayyaji Rao Road",
+               "short_name" : "Sayyaji Rao Rd",
+               "types" : [ "route" ]
+            },
+            {
+               "long_name" : "Agrahara",
+               "short_name" : "Agrahara",
+               "types" : [ "neighborhood", "political" ]
+            },
+            {
+               "long_name" : "Chamrajpura",
+               "short_name" : "Chamrajpura",
+               "types" : [ "political", "sublocality", "sublocality_level_1" ]
+            },
+            {
+               "long_name" : "Mysuru",
+               "short_name" : "Mysuru",
+               "types" : [ "locality", "political" ]
+            },
+            {
+               "long_name" : "Mysuru",
+               "short_name" : "Mysuru",
+               "types" : [ "administrative_area_level_2", "political" ]
+            },
+            {
+               "long_name" : "Karnataka",
+               "short_name" : "KA",
+               "types" : [ "administrative_area_level_1", "political" ]
+            },
+            {
+               "long_name" : "India",
+               "short_name" : "IN",
+               "types" : [ "country", "political" ]
+            },
+            {
+               "long_name" : "570001",
+               "short_name" : "570001",
+               "types" : [ "postal_code" ]
+            }
+         ],
+         "formatted_address" : "Sayyaji Rao Rd, Agrahara, Chamrajpura, Mysuru, Karnataka 570001, India",
+         "geometry" : {
+            "location" : {
+               "lat" : 12.3051351,
+               "lng" : 76.65514829999999
+            },
+            "location_type" : "GEOMETRIC_CENTER",
+            "viewport" : {
+               "northeast" : {
+                  "lat" : 12.3064840802915,
+                  "lng" : 76.6564972802915
+               },
+               "southwest" : {
+                  "lat" : 12.3037861197085,
+                  "lng" : 76.6537993197085
+               }
+            }
+         },
+         "partial_match" : true,
+         "place_id" : "ChIJ-aH5AxFwrzsRDdokoeK6f8M",
+         "plus_code" : {
+            "compound_code" : "8M44+33 Mysuru, Karnataka, India",
+            "global_code" : "7J4R8M44+33"
+         },
+         "types" : [ "establishment", "point_of_interest", "premise" ]
+      }
+   ],
+   "status" : "OK"
+}

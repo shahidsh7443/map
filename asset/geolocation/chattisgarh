@@ -1,0 +1,50 @@
+{
+   "results" : [
+      {
+         "address_components" : [
+            {
+               "long_name" : "Chhattisgarh",
+               "short_name" : "CT",
+               "types" : [ "administrative_area_level_1", "political" ]
+            },
+            {
+               "long_name" : "India",
+               "short_name" : "IN",
+               "types" : [ "country", "political" ]
+            }
+         ],
+         "formatted_address" : "Chhattisgarh, India",
+         "geometry" : {
+            "bounds" : {
+               "northeast" : {
+                  "lat" : 24.1187091,
+                  "lng" : 84.39599799999999
+               },
+               "southwest" : {
+                  "lat" : 17.782531,
+                  "lng" : 80.2439
+               }
+            },
+            "location" : {
+               "lat" : 21.2786567,
+               "lng" : 81.86614419999999
+            },
+            "location_type" : "APPROXIMATE",
+            "viewport" : {
+               "northeast" : {
+                  "lat" : 24.1187091,
+                  "lng" : 84.39599799999999
+               },
+               "southwest" : {
+                  "lat" : 17.782531,
+                  "lng" : 80.2439
+               }
+            }
+         },
+         "partial_match" : true,
+         "place_id" : "ChIJrYt6xhYfJjoRlZ0X-xL0I1w",
+         "types" : [ "administrative_area_level_1", "political" ]
+      }
+   ],
+   "status" : "OK"
+}

@@ -1,0 +1,44 @@
+{
+   "results" : [
+      {
+         "address_components" : [
+            {
+               "long_name" : "Srinagar",
+               "short_name" : "Srinagar",
+               "types" : [ "locality", "political" ]
+            }
+         ],
+         "formatted_address" : "Srinagar",
+         "geometry" : {
+            "bounds" : {
+               "northeast" : {
+                  "lat" : 34.204096,
+                  "lng" : 74.8965268
+               },
+               "southwest" : {
+                  "lat" : 34.009341,
+                  "lng" : 74.7169835
+               }
+            },
+            "location" : {
+               "lat" : 34.0836708,
+               "lng" : 74.79728249999999
+            },
+            "location_type" : "APPROXIMATE",
+            "viewport" : {
+               "northeast" : {
+                  "lat" : 34.204096,
+                  "lng" : 74.8965268
+               },
+               "southwest" : {
+                  "lat" : 34.009341,
+                  "lng" : 74.7169835
+               }
+            }
+         },
+         "place_id" : "ChIJ78XjhlaF4TgRxgXjwXxLJGY",
+         "types" : [ "locality", "political" ]
+      }
+   ],
+   "status" : "OK"
+}

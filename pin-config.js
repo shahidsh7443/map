@@ -17,7 +17,7 @@
 		'overColor':'#3399ff',//color of the pin when mouse hover
 		'downColor':'#00ffff',//color of the pin when clicked
 		//(trick, if you make this pin un-clickable > make the overColor and downColor the same)
-		'url':'http://localhost/map/mapdata.php?q=delhi?id=38',//URL of this pin
+		'url':'http://localhost/wikilogy/mapdata.php?q=delhi?id=38',//URL of this pin
 		'target':'new_window',//'new_window' opens URL in new window//'same_window' opens URL in the same window //'none' pin is not clickable
 		'enable':true,//true/false to enable/disable this pin
 	},
@@ -32,7 +32,7 @@
 		'upColor':'#FF0000',
 		'overColor':'#FFEE148',
 		'downColor':'#00ffff',
-		'url':'http://localhost/map/mapdata.php?q=mumbai?id=39',
+		'url':'http://localhost/wikilogy/mapdata.php?q=mumbai?id=39',
 		'target':'same_window',
 		'enable':true,
 	},
@@ -47,7 +47,7 @@
 		'upColor':'#FF0000',
 		'overColor':'#FFEE88',
 		'downColor':'#00ffff',
-		'url':'http://localhost/map/mapdata.php?q=bangalore?id=40',
+		'url':'http://localhost/wikilogy/mapdata.php?q=bangalore?id=40',
 		'target':'same_window',
 		'enable':true,
 	},
@@ -62,7 +62,7 @@
 		'upColor':'#FF0000',
 		'overColor':'#FFEE88',
 		'downColor':'#00ffff',
-		'url':'http://localhost/map/mapdata.php?q=hyderabad?id=41',
+		'url':'http://localhost/wikilogy/mapdata.php?q=hyderabad?id=41',
 		'target':'same_window',
 		'enable':true,
 	},
@@ -77,7 +77,7 @@
 		'upColor':'#FF0000',
 		'overColor':'#FFEE88',
 		'downColor':'#00ffff',
-		'url':'http://localhost/map/mapdata.php?q=ahmedabad?id=42',
+		'url':'http://localhost/wikilogy/mapdata.php?q=ahmedabad?id=42',
 		'target':'same_window',
 		'enable':true,
 	},
@@ -92,7 +92,7 @@
 		'upColor':'#FF0000',
 		'overColor':'#FFEE88',
 		'downColor':'#00ffff',
-		'url':'http://localhost/map/mapdata.php?q=chennai?id=43',
+		'url':'http://localhost/wikilogy/mapdata.php?q=chennai?id=43',
 		'target':'same_window',
 		'enable':true,
 	},
@@ -107,7 +107,7 @@
 		'upColor':'#FF0000',
 		'overColor':'#FFEE88',
 		'downColor':'#00ffff',
-		'url':'http://localhost/map/mapdata.php?q=kolkata?id=44',
+		'url':'http://localhost/wikilogy/mapdata.php?q=kolkata?id=44',
 		'target':'same_window',
 		'enable':true,
 	},
@@ -122,7 +122,7 @@
 		'upColor':'#FF0000',
 		'overColor':'#FFEE88',
 		'downColor':'#00ffff',
-		'url':'http://localhost/map/mapdata.php?q=surat?id=45',
+		'url':'http://localhost/wikilogy/mapdata.php?q=surat?id=45',
 		'target':'same_window',
 		'enable':true,
 	},
@@ -137,7 +137,7 @@
 		'upColor':'#FF0000',
 		'overColor':'#FFEE88',
 		'downColor':'#00ffff',
-		'url':'http://localhost/map/mapdata.php?q=pune?id=46',
+		'url':'http://localhost/wikilogy/mapdata.php?q=pune?id=46',
 		'target':'same_window',
 		'enable':true,
 	},

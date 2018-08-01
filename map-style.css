@@ -1,4 +1,19 @@
-﻿#mapwrapper {
+@font-face {
+  font-family: Raleway-Black;
+  src: url('/wikilogy/fonts/raleway/Raleway-Black.ttf');
+}
+
+@font-face {
+  font-family: Raleway-SemiBold;
+  src: url('/wikilogy/fonts/raleway/Raleway-SemiBold.ttf');
+}
+
+@font-face {
+  font-family: Raleway-Bold;
+  src: url('/wikilogy/fonts/raleway/Raleway-Bold.ttf');
+}
+
+#mapwrapper {
 	max-width: 1920px;
 	margin: 0 auto;
 	padding: 0 0;
@@ -115,26 +130,59 @@ div#map_base {
 .fdata {
     margin-left: auto;
     margin-right: auto;
-    width: 50%;
+    width: 90%;
     display: table;
 }
 .fdata h3 {
     margin-top: 5px;
-		    border-bottom: 1px dotted;
+				font-weight: 600;
+				font-size: 35px;
+				text-align: center;
+				    font-family: Raleway-Black;
 			}
+
+.stars {
+    margin-top: 5px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+.s-color, .s-color1, .s-color2, .s-colors1 {
+    color: #289b5b;
+}
+.s-colors1 .fa {
+    font-size: 10px;
+}
+.s-color1 .fa {
+    font-size: 20px;
+}
 .mform
 {
 	margin-top: 25px;
     padding: 25px;
-    background: #dbd9d9;
-		border-radius: 5px;
+    background: #ffffff;
+		border: 1px solid #ececec;
+		border-radius: 2px;
+box-shadow: 4px 5px 10px rgba(0,0,0,0.5);
 }
 .mform input {
-    width: 100%;
-    height: 35px;
+    height: 75px;
     margin-bottom: 20px;
-    border-radius: 5px;
     padding-left: 5px;
+    border: transparent;
+    display: block;
+    width: 100%;
+    background: #f2f2f2;
+    border-radius: 2px;
+    font-family: Raleway-SemiBold;
+    font-size: 20px;
+    color: #000000;
+    line-height: 1.2;
+    padding: 0 28px;
+    -webkit-transition: all 0.4s;
+    -o-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    transition: all 0.4s;
+    margin-top: 10px;
 }
 .mform #desc {
     border-radius: 5px;
@@ -149,11 +197,23 @@ div#map_base {
 }
 #sbt
 {
-	width: 25%;
+	width: 15%;
 	    color: #ffffff;
-	    background: #F44336;
+	       background: -webkit-linear-gradient(right, #2f91ff, #00c513, #2f91ff, #00c513);
 	    font-size: 14px;
 	    font-weight: 600;
+justify-content: center;
+align-items: center;
+padding: 0 20px;
+min-width: 150px;
+height: 62px;
+font-family: Raleway-Bold;
+font-size: 16px;
+color: #fff;
+line-height: 1.2;
+text-transform: uppercase;
+outline: none !important;
+    border: none;
 }
 #nvbar
 {
@@ -184,14 +244,17 @@ body::-webkit-scrollbar-thumb {
 	  width: 100%;
 	  height: auto;
 	}
-
-	#cty .overlay {
+.ctcl1 .image
+{
+	height: 500px;
+}
+	#cty .overlay, .ctcl1 .overlay {
 	  position: absolute;
 	  top: 0;
 	  bottom: 0;
 	  left: 0;
 	  right: 0;
-	  height: 100%;
+	  height: 500px;
 	  width: 100%;
 	  background-color: rgba(0,0,0,0.5);
 		    opacity: 1;
@@ -210,4 +273,218 @@ body::-webkit-scrollbar-thumb {
 #cty .ctcl
 {
 	margin-bottom: 10px;
+}
+.header-content .container
+{
+	max-width: 100%;
+	padding: 0 25px 0 25px;
+}
+.logo2 img
+{
+	width: 200px;
+}
+.title-text .text
+{
+	top: 10%;
+    font-size: 12px;
+}
+.dcontent {
+    padding: 10px 20px 20px 20px;
+    border: 1px solid #3333;
+}
+.site-sub-content .container
+{
+	max-width: 100%;
+	padding: 0px;
+}
+#mhide
+{
+	margin-left: 0px;
+	margin-right: 0px;
+}
+/*#clima {
+	position: absolute;
+	top: 21%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	text-align: center;
+	width: 100%;
+}*/
+.date {
+    font-size: 16px;
+		margin-bottom: 0px;
+font-weight: 600;
+}
+#clima p {
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+    color: #ffffff;
+}
+.temp {
+    font-size: 75px;
+		font-weight: 600;
+		margin-bottom: 0px;
+}
+.temp span {
+    font-size: 30px;
+}
+.icon img {
+    width: 60px !important;
+    margin-top: -30px;
+}
+#tgal .title
+{
+	text-align: center;
+}
+.tcontent p {
+    font-size: 15px;
+    text-align: justify;
+    color: #333333;
+}
+/*.post-featured-header img
+{
+	box-shadow: 2px 5px 10px rgba(0,0,0,0.8);
+}*/
+.wikilogy-title.style-1
+{
+	margin-bottom: 15px;
+	margin-top: 15px;
+}
+#weather .mimg
+{
+	display: block;
+    width: 100%;
+    height: auto;
+}
+#mrghide
+{
+	margin-left: 0px;
+	margin-right: 0px;
+}
+#mrghide .ctcl1
+{
+	padding-left: 0px;
+	padding-right: 0px;
+}
+#clima .text
+{
+	width: 100%;
+	padding-top: 40px;
+}
+#distanceinfo h3
+{
+	margin-bottom: 10px;
+	border-bottom: 1px solid;
+}
+#dvMap
+{
+	width: 100%;
+	height: 500px;
+}
+div#places
+{
+  margin-top: 10%;
+}
+.temp
+{
+	position: absolute;
+  right: 30%;
+  margin-top: 15%;
+  font-size: 50px;
+}
+p.icon img {
+    position: absolute;
+    right: 15%;
+    margin-top: 20%;
+}
+#clima .date
+{
+	text-align: right;
+	margin-right: 25px;
+}
+#mhide .fullwidthsidebar
+{
+	padding: 0;
+}
+#mhide  .nopadd
+{
+	padding-left: 0px;
+	padding-right: 0px;
+}
+.tcontent {
+    padding: 0 50px 0 50px;
+}
+g#map_points {
+    display: none;
+}
+.rtext
+{
+	margin-bottom: 20px;
+}
+.placenames
+{
+		padding-top: 15px;
+    background: rgba(255,255,255,0.8);
+    padding-bottom: 10px;
+}
+.fdata h2
+{
+	font-weight: 600;
+	color: #ffffff;
+border-top: 3px double;
+    padding-top: 5px;
+		font-family: Raleway-Black;
+}
+.stars {
+    margin-top: 5px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+.s-color, .s-color1, .s-color2, .s-colors1 {
+    color: #0064b3;
+}
+.s-colors1 .fa {
+    font-size: 10px;
+}
+.s-color1 .fa {
+    font-size: 20px;
+}
+#sep hr
+{
+	border-top: 3px double #989292;
+}
+input:focus {
+    background: #cecece;
+    border: none;
+    outline: none;
+}
+#gohome
+{
+   position: absolute;
+   top: 0;
+   padding: 10px 20px 10px 20px;
+   border: 1px solid transparent;
+   background: #469bfa;
+   color: white;
+   border-radius: 2px;
+   margin-top: 1px;
+}
+#gohome a
+{
+  color: white;
+font-weight: 600;
+font-family: Raleway-bold;
+}
+.carousel-inner.cin .item img {
+    height: 575px;
+}
+#indi .active
+{
+  margin-right: 10px;
+}
+#txtSource, #txtDestination ,#sbtn
+{
+  display: none;
 }
