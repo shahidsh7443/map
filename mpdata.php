@@ -391,7 +391,9 @@ var pht=$('.cin img').height();
              <div class="wikilogy-title style-1">
                 <div class="title-text" id="stitle">
                    <div class="text">Your Selected Destination</div>
-                   <div class="title"></div>
+                   <div class="title">
+                    
+                   </div>
                 </div>
              </div>
 
@@ -406,7 +408,12 @@ var pht=$('.cin img').height();
                    <!--<div class="post-featured-header"><img width="1170" height="570" src="/wikilogy/wp-content/uploads/2017/09/ktp.jpg" class="attachment-wikilogy-post-1 size-wikilogy-post-1 wp-post-image" alt=""></div>-->
 
                    <div id="myCarousel" class="carousel slide carousel-fade" data-ride="carousel">
-
+                     <?php include_once "config.php";
+                     $place=$_GET['q'];
+                     $sql=mysqli_query($conn,"select banner from mapdata where longname='$place'");
+                     $result=mysqli_fetch_array($sql);
+                     $mark1 = explode(',', $result['banner']);
+                     ?>
                	    <ol class="carousel-indicators ci" id="indi">
                	      <li data-target="#myCarousel" data-slide-to="0" class="active" ></li>
                	      <li data-target="#myCarousel" data-slide-to="1"></li>
@@ -417,17 +424,17 @@ var pht=$('.cin img').height();
                	    <div class="carousel-inner cin">
 
                	      <div class="item active">
-               	          <img src="https://www.remotetraveler.com/wp-content/uploads/2015/01/Chariot-and-Vittala-Temple-in-Hampi.jpg" alt="Los Angeles" class="img1" >
+               	          <img src="<?php echo $mark1[0]; ?>" alt="Los Angeles" class="img1" >
 
                	      </div>
 
                	      <div class="item">
-               	       <img src="https://www.kulzy.com/timthumb.php?src=https://www.kulzy.com/uploads/user/1/creatives/images/karnatakatourism_20140703015910.jpg&w=867" alt="Los Angeles" class="img2">
+               	       <img src="<?php echo $mark1[1]; ?>" alt="Los Angeles" class="img2">
 
                	      </div>
 
                	      <div class="item">
-               	        <img src="https://cdn.thewire.in/wp-content/uploads/2018/05/19033426/Vidhana_Souda__Bangalore-1024x638.jpg" alt="Los Angeles" class="img3">
+               	        <img src="<?php echo $mark1[2]; ?>" alt="Los Angeles" class="img3">
 
                	      </div>
 
@@ -460,29 +467,12 @@ var pht=$('.cin img').height();
 
 <p>-->
 </div>
-<img src="/wikilogy/wp-content/uploads/2017/10/separator.png">
-<div class="dinf" id="distanceinfo">
-  <h3>Distance:</h3>
-<div class="row mp">
-  <div class="col-lg-6 col-xs-12">
-    <input type="text" id="txtSource" />
-  </div>
-    <div class="col-lg-6 col-xs-12">
-    <input type="text" id="txtDestination"/>
-  </div>
-  <div class="col-lg-6 col-xs-12">
-  <input type="submit" id="sbtn" onclick="GetRoute()"/>
+
+<!--<div class="suggestionpanel">
+  <h2 class="text-center">Suggested Places</h2>
+<div id="tourism">
 </div>
-    <!--<div class="col-lg-12 col-xs-12">
-    <input type="button" value="Get Route" onclick="GetRoute()" />
-  </div>-->
-    <div class="col-lg-12 col-xs-12"><div id="dvDistance">
-    </div></div>
-      <div class="col-lg-12 col-xs-12">
-        <div id="dvMap">
-        </div></div>
-    </div>
-  </div>
+</div>-->
                     </div>
      </div>
      <div class="col-lg-4 col-sm-4 col-xs-12 nopadd" id="minimap">
@@ -575,13 +565,69 @@ var pht=$('.cin img').height();
                                </div>
                     </div>
                  </div>
+                 <div class="col-lg-12 col-xs-12 col-sm-12">
+                   <div class="dinf" id="distanceinfo">
+                     <h3>Distance:</h3>
+                   <div class="row mp">
+                     <div class="col-lg-6 col-xs-12">
+                       <input type="text" id="txtSource" />
+                     </div>
+                       <div class="col-lg-6 col-xs-12">
+                       <input type="text" id="txtDestination"/>
+                     </div>
+                     <div class="col-lg-6 col-xs-12">
+                     <input type="submit" id="sbtn" onclick="GetRoute()"/>
+                   </div>
+                       <!--<div class="col-lg-12 col-xs-12">
+                       <input type="button" value="Get Route" onclick="GetRoute()" />
+                     </div>-->
+                       <div class="col-lg-12 col-xs-12"><div id="dvDistance">
+                       </div></div>
+                         <div class="col-lg-12 col-xs-12">
+                           <div id="dvMap">
+                           </div></div>
+                       </div>
+                     </div>
+                 </div>
               </div>
            </div>
      </div>
              </div>
           </div>
 
+<div class="row" id="suggestionrow">
+<div class="col-lg-12 col-xs-12 col-sm-12">
+  <div class="suggestionpanel">
+    <h2 class="text-center">Suggested Places</h2>
+  <div id="jssor_1" style="position:relative;margin:0 auto;top:0px;left:0px;overflow:hidden;visibility:hidden;">
+          <!-- Loading Screen -->
+          <div data-u="slides" style="cursor:default;position:relative;top:0px;left:0px;overflow:hidden;" id="tourism">
 
+    <?php include("suggested.php")?>
+          </div>
+          <!-- Bullet Navigator -->
+          <div data-u="navigator" class="jssorb057" style="position:absolute;bottom:12px;right:12px;" data-autocenter="1" data-scale="0.5" data-scale-bottom="0.75">
+              <div data-u="prototype" class="i" style="width:16px;height:16px;">
+                  <svg viewbox="0 0 16000 16000" style="position:absolute;top:0;left:0;width:100%;height:100%;">
+                      <circle class="b" cx="8000" cy="8000" r="5000"></circle>
+                  </svg>
+              </div>
+          </div>
+          <!-- Arrow Navigator -->
+          <div  data-u="arrowleft" class="jssora073" style="width:50px;height:50px;top:0px;left:30px;" data-autocenter="2" data-scale="0.75" data-scale-left="0.75">
+              <svg viewbox="0 0 16000 16000" style="position:absolute;top:0;left:0;width:100%;height:100%;">
+                  <path class="a" d="M4037.7,8357.3l5891.8,5891.8c100.6,100.6,219.7,150.9,357.3,150.9s256.7-50.3,357.3-150.9 l1318.1-1318.1c100.6-100.6,150.9-219.7,150.9-357.3c0-137.6-50.3-256.7-150.9-357.3L7745.9,8000l4216.4-4216.4 c100.6-100.6,150.9-219.7,150.9-357.3c0-137.6-50.3-256.7-150.9-357.3l-1318.1-1318.1c-100.6-100.6-219.7-150.9-357.3-150.9 s-256.7,50.3-357.3,150.9L4037.7,7642.7c-100.6,100.6-150.9,219.7-150.9,357.3C3886.8,8137.6,3937.1,8256.7,4037.7,8357.3 L4037.7,8357.3z"></path>
+              </svg>
+          </div>
+          <div data-u="arrowright" class="jssora073" style="width:50px;height:50px;top:0px;right:30px;" data-autocenter="2" data-scale="0.75" data-scale-right="0.75">
+              <svg viewbox="0 0 16000 16000" style="position:absolute;top:0;left:0;width:100%;height:100%;">
+                  <path class="a" d="M11962.3,8357.3l-5891.8,5891.8c-100.6,100.6-219.7,150.9-357.3,150.9s-256.7-50.3-357.3-150.9 L4037.7,12931c-100.6-100.6-150.9-219.7-150.9-357.3c0-137.6,50.3-256.7,150.9-357.3L8254.1,8000L4037.7,3783.6 c-100.6-100.6-150.9-219.7-150.9-357.3c0-137.6,50.3-256.7,150.9-357.3l1318.1-1318.1c100.6-100.6,219.7-150.9,357.3-150.9 s256.7,50.3,357.3,150.9l5891.8,5891.8c100.6,100.6,150.9,219.7,150.9,357.3C12113.2,8137.6,12062.9,8256.7,11962.3,8357.3 L11962.3,8357.3z"></path>
+              </svg>
+          </div>
+      </div>
+  </div>
+</div>
+</div>
 
 
 
@@ -861,7 +907,7 @@ $.ajax({
 
             // remove cite error
             //blurb.find('.mw-ext-cite-error').remove();
-            $('.tcontent').html($(blurb).find('p'));
+            $('.tcontent').html($(blurb));
         /*  $('a').each(function(){
         this.href = this.href.replace('/wiki/%', '1'); this.href = this.href.replace(l1+1, 'https://en.wikipedia.org/wiki/%');
     });*//*
@@ -960,8 +1006,8 @@ function GetRoute() {
             var duration = response.rows[0].elements[0].duration.text;
             var dvDistance = document.getElementById("dvDistance");
            dvDistance.innerHTML = "";
-            dvDistance.innerHTML += "Distance: " + distance + "<br />";
-            dvDistance.innerHTML += "Duration:" + duration;
+            $('#dvDistance').append('<h5>Distance :'+distance+'</h5>');
+          $('#dvDistance').append('<h5>Duration :'+duration+'</h5>');
 
         } else {
             alert("Unable to find the distance via road.");
@@ -969,6 +1015,9 @@ function GetRoute() {
     });
 }
 $(window).on('scroll',function() {
+  var flag = $('#dvDistance h5').length;
+  if(flag==0)
+  {
     if (checkVisible($('#distanceinfo'))) {
         $( "#sbtn" ).trigger( "click" );
         $(window).off('scroll');
@@ -976,8 +1025,11 @@ $(window).on('scroll',function() {
      else {
 
     }
-});
+  }
+  else {
 
+  }
+});
  function checkVisible( elm, eval ) {
     eval = eval || "object visible";
     var viewportHeight = $(window).height(), // Viewport Height
@@ -989,5 +1041,56 @@ $(window).on('scroll',function() {
     if (eval == "above") return ((y < (viewportHeight + scrolltop)));
 }
 </script>
+<script src="js/jquery-1.11.3.min.js" type="text/javascript"></script>
+<script src="js/jssor.slider-27.4.0.min.js" type="text/javascript"></script>
+<script type="text/javascript">
+      jQuery(document).ready(function ($) {
+
+          var jssor_1_options = {
+            $AutoPlay: 2,
+            $AutoPlaySteps: 1,
+            $SlideDuration: 160,
+            $SlideWidth: 350,
+            $SlideSpacing: 10,
+            $Loop : 0,
+            $SlideEasing: $Jease$.$OutQuad,
+            $ArrowNavigatorOptions: {
+              $Class: $JssorArrowNavigator$,
+              $Steps: 2
+            },
+            $BulletNavigatorOptions: {
+              $Class: $JssorBulletNavigator$
+            }
+          };
+
+          var jssor_1_slider = new $JssorSlider$("jssor_1", jssor_1_options);
+
+          /*#region responsive code begin*/
+
+          var MAX_WIDTH = 980;
+
+          function ScaleSlider() {
+              var containerElement = jssor_1_slider.$Elmt.parentNode;
+              var containerWidth = containerElement.clientWidth;
+
+              if (containerWidth) {
+
+                  var expectedWidth = Math.min(MAX_WIDTH || containerWidth, containerWidth);
+
+                  jssor_1_slider.$ScaleWidth(expectedWidth);
+              }
+              else {
+                  window.setTimeout(ScaleSlider, 30);
+              }
+          }
+
+          ScaleSlider();
+
+          $(window).bind("load", ScaleSlider);
+          $(window).bind("resize", ScaleSlider);
+          $(window).bind("orientationchange", ScaleSlider);
+          /*#endregion responsive code end*/
+      });
+  </script>
 </body>
 </html>

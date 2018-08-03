@@ -48,12 +48,28 @@ $.ajax({
 													processData:false,
 							 data: form_data,
 							 success: function( data ){
-							alert("Hello");
+                 $("#sbt").closest("div").append(" <span class='error'>Data submitted successfully</span>");
+                 $('.error').css({'display':'inline-block'});
+                $('.mform')[0].reset();
+                var myvar = setTimeout(hidemessage, 3000);
+                  function hidemessage()
+                  {
+                    $('.error').css({'display':'none'});
+                    clearInterval(myvar);
+                  }
 
 							},
 							 error: function( aa ){
-							alert("bye");
 
+                 $("#sbt").closest("div").append(" <span class='errordanger'>Please fill all the fields</span>");
+                 $('.errordanger').css({'display':'inline-block'});
+                 myvar = setInterval(hidemessage, 3000);
+                  function hidemessage()
+                  {
+                    $('.errordanger').css({'display':'none'});
+                      clearInterval(myvar);
+
+                  }
 							 }
 					 });
 
@@ -87,19 +103,19 @@ $desc = "";
   <hr class="hr1"></div><div class="col-lg-2 col-xs-2"><div class="text-center stars"><span class="s-colors1"><i class="fa fa-star"></i></span><span class="s-colors1"><i class="fa fa-star"></i></span><span class="s-colors1"><i class="fa fa-star"></i></span><span class="s-color"><i class="fa fa-star"></i></span><span class="s-color1"><i class="fa fa-star"></i></span><span class="s-color2">
     <i class="fa fa-star"></i></span><span class="s-colors1"><i class="fa fa-star"></i></span><span class="s-colors1"><i class="fa fa-star"></i></span><span class="s-colors1"><i class="fa fa-star"></i></span></div></div><div class="col-lg-5 col-xs-5"><hr class="hr1"></div></div>
 	<div class="row">
-<div class="col-lg-6 col-xs-12">
+<div class="col-lg-4 col-xs-12">
 	  <input type="text" id="lname" name="lname" placeholder="Long Name">
 </div>
-<div class="col-lg-6 col-xs-12">
+<div class="col-lg-4 col-xs-12">
 	  <input type="text" id="sname" name="sname" placeholder="Short Name">
+</div>
+<div class="col-lg-4 col-xs-12">
+		<input type="text" id="wname" name="wname" placeholder="Wiki Name">
 </div>
 	</div>
 	<div class="row">
-<div class="col-lg-6 col-xs-12">
-		<input type="text" id="bnr" name="bnr" placeholder="Banner Image URL">
-</div>
-<div class="col-lg-6 col-xs-12">
-		<input type="text" id="wname" name="wname" placeholder="Wiki Name">
+<div class="col-lg-12 col-xs-12">
+		<textarea  id="bnr" name="bnr" rows="5" col="100" placeholder="Banner Image URL Seperated by ' , ' (Eg : xyz.jpg , asd.png...)"></textarea>
 </div>
 	</div>
 	<div class="row">
@@ -110,9 +126,6 @@ $desc = "";
 			echo $desc;
 			?>
 		</textarea></textarea>
-</div>
-<div class="col-lg-12 col-xs-12">
-			<input type="text" id="place" name="ist" placeholder="Parent Location/India for State Names">
 </div>
 </div>
 <div class="row">
