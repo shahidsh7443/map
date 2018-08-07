@@ -40,6 +40,11 @@ h1, h2, h3, h4, h5, h6, .mobile-menu, .demo-language-selector ul, .custom-file-c
 .vc_custom_1507481850113{margin-right:0rem !important;margin-left:0rem !important;}</style><noscript><style>.wpb_animate_when_almost_visible{opacity:1;}</style></noscript>
 <script>
 $(document).ready(function(){
+  $($("#tourism").children()).addClass("test");
+  $($("#jssor_1 div").children()[0]).attr('id','scalechange');
+    $($("#jssor_1").children()[0]).attr('id','ctop');
+    $($("#jssor_1").children()[2]).attr('id','rnav');
+    $($("#jssor_1").children()[1]).attr('id','lnav');
 if($(window).width()>1030)
 {
   var tt=$('.scroll-content').width();
@@ -76,7 +81,7 @@ var pht=$('.cin img').height();
               <div class="container">
                  <div class="main-content d-flex justify-content-between align-items-center">
                     <div class="header-logo">
-                       <div class="logo"><a href="index.php" class="site-logo" title="Wikilogy"><img alt="Wikilogy" src="wp-content/uploads/2017/10/logo.png"></a></div>
+                       <div class="logo"><a href="index.php" class="site-logo" title="Wikilogy"><img alt="Wikilogy" src="images/logo.png"></a></div>
                     </div>
                     <div class="mainmenu">
                        <nav class="navbar navbar-expand-lg" id="nvbar">
@@ -102,16 +107,7 @@ var pht=$('.cin img').height();
                                    </ul>
                                 </li>
 
-                                <li id="menu-item-316" class="nav-item menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children dropdown menu-item-316" data-dropdown="dropdown">
-                                   <a href="#" class="nav-link">Categories<i class="fas fa-chevron-down"></i></a>
-                                   <ul role="menu" class="dropdown-menu">
-                                      <li id="menu-item-1172" class="nav-item menu-item menu-item-type-post_type menu-item-object-page menu-item-1172"><a href="#" class="nav-link">Historical</a></li>
-                                      <li id="menu-item-1214" class="nav-item menu-item menu-item-type-post_type menu-item-object-page menu-item-1214"><a href="#" class="nav-link">Naturistic</a></li>
-                                      <li id="menu-item-1188" class="nav-item menu-item menu-item-type-post_type menu-item-object-page menu-item-1188"><a href="#" class="nav-link">Mega Cities</a></li>
-                                      <li id="menu-item-1217" class="nav-item menu-item menu-item-type-post_type menu-item-object-page menu-item-1217"><a href="#" class="nav-link">National Parks</a></li>
-                                      <li id="menu-item-1218" class="nav-item menu-item menu-item-type-custom menu-item-object-custom menu-item-1218"><a href="#" class="nav-link">Island</a></li>
-                                   </ul>
-                                </li>
+
                                 <li id="menu-item-319" class="nav-item menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children dropdown menu-item-319" data-dropdown="dropdown">
                                    <a href="#" class="nav-link">Blog</a>
                                 </li>
@@ -120,168 +116,14 @@ var pht=$('.cin img').height();
                           </div>
                        </nav>
                     </div>
-                    <div class="elements">
-                       <div class="item header-user-box">
-                          <div class="icon">
-                             <a href="#" data-target="#user_login_popup" data-toggle="modal" title="Login"><i class="fas fa-user"></i></a>
-                             <div class="close-icon"></div>
-                          </div>
-                       </div>
-                       <div class="item hover-item header-social">
-                          <div class="icon">
-                             <i class="fas fa-share-alt"></i>
-                             <div class="close-icon"></div>
-                          </div>
-                          <div class="content">
-                             <ul class="social-links">
-                                <li><a href="https://www.facebook.com/gloriathemes/" class="facebook" title="Facebook" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
-                                <li><a href="https://twitter.com/GloriaThemes" class="twitter" title="Twitter" target="_blank"><i class="fab fa-twitter"></i></a></li>
-                                <li><a href="https://plus.google.com/111420305296774523403" class="googleplus" title="Google+" target="_blank"><i class="fab fa-google-plus-g"></i></a></li>
-                                <li><a href="https://www.instagram.com/gloriathemes/" class="instagram" title="Instagram" target="_blank"><i class="fab fa-instagram"></i></a></li>
-                                <li><a href="https://plus.google.com/111420305296774523403" class="youtube" title="YouTube" target="_blank"><i class="fab fa-youtube"></i></a></li>
-                                <li><a href="https://en.wikipedia.org/wiki/WordPress" class="wikipedia" title="Wikipedia" target="_blank"><i class="fab fa-wikipedia-w"></i></a></li>
-                             </ul>
-                          </div>
-                       </div>
-                       <div class="item hover-item header-search">
-                          <div class="icon">
-                             <i class="fas fa-search"></i>
-                             <div class="close-icon"></div>
-                          </div>
-                          <div class="content">
-                             <form role="search" method="get" class="searchform">
-                                <div class="search-form"> <input type="text" value="" placeholder="Enter the keyword..." name="s" class="searchform-text"> <button><i class="fas fa-search"></i></button></div>
-                             </form>
-                          </div>
-                       </div>
-                       <div class="item hover-item header-language">
-                          <div class="icon">
-                             <i class="fas fa-globe"></i>
-                             <div class="close-icon"></div>
-                          </div>
-                          <div class="content">
-                             <div class="demo-language-selector">
-                                <ul>
-                                   <li><a href="#" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="English">EN</a></li>
-                                   <li><a href="#" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Français">FR</a></li>
-                                   <li><a href="#" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Deutsch">DE</a></li>
-                                   <li><a href="#" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Espanol">ES</a></li>
-                                   <li><a href="#" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Türkçe">TR</a></li>
-                                </ul>
-                             </div>
-                          </div>
-                       </div>
-                       <div class="item hover-item header-sidebar">
-                          <div class="icon">
-                             <i class="sidebar-icon"><span></span><span></span><span></span></i>
-                             <div class="close-icon"></div>
-                          </div>
-                          <div class="overlay"></div>
-                          <div class="content">
-                             <div class="close-button"></div>
-                             <div class="scroll-wrapper content-wrapper scrollbar-outer" style="position: relative;"><div class="content-wrapper scrollbar-outer scroll-content" style="height: auto; margin-bottom: 0px; margin-right: 0px; max-height: 1145px;">
-                                <div class="header-logo">
-                                   <div class="logo"><a href="index.php" class="site-logo" title="Wikilogy"><img alt="Wikilogy" src="wp-content/uploads/2017/10/logo.png"></a></div>
-                                </div>
-                                <div class="header-sidebar-menu">
-                                   <nav class="navbar">
-                                      <div class="collapse navbar-collapse">
-                                        <ul id="sidemen" class="navbar-nav m-auto" style="width: 252.984px;">
-                                           <li id="menu-item-13" class="nav-item menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-11 current_page_item current-menu-ancestor current-menu-parent current_page_parent current_page_ancestor menu-item-has-children dropdown menu-item-13 active" data-dropdown="dropdown">
-                                              <a href="index.php" class="nav-link">Home</a>
 
-                                           <i class="fas fa-chevron-down"></i></li>
-                                           <li id="menu-item-14" class="nav-item menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children dropdown menu-item-14" data-dropdown="dropdown">
-                                              <a href="#" class="nav-link">Popular Destinations<i class="fas fa-chevron-down"></i></a>
-                                              <ul role="menu" class="dropdown-menu">
-                                                 <li id="menu-item-714" class="nav-item menu-item menu-item-type-taxonomy menu-item-object-content_category menu-item-714"><a href="#" class="nav-link">Kerala</a></li>
-                                                 <li id="menu-item-715" class="nav-item menu-item menu-item-type-taxonomy menu-item-object-content_category menu-item-715"><a href="#" class="nav-link">Aleppy</a></li>
-                                                 <li id="menu-item-716" class="nav-item menu-item menu-item-type-taxonomy menu-item-object-content_category menu-item-716"><a href="#" class="nav-link">Munnar</a></li>
-                                                 <li id="menu-item-717" class="nav-item menu-item menu-item-type-taxonomy menu-item-object-content_category menu-item-717"><a href="#" class="nav-link">Shimla</a></li>
-                                                 <li id="menu-item-718" class="nav-item menu-item menu-item-type-taxonomy menu-item-object-content_category menu-item-718"><a href="#" class="nav-link">Ooty</a></li>
-                                                 <li id="menu-item-719" class="nav-item menu-item menu-item-type-taxonomy menu-item-object-content_category menu-item-719"><a href="#" class="nav-link">Kaziranga National Park</a></li>
-                                                 <li id="menu-item-720" class="nav-item menu-item menu-item-type-taxonomy menu-item-object-content_category menu-item-720"><a href="#" class="nav-link">Jammu &amp; kashmir</a></li>
-                                                 <li id="menu-item-722" class="nav-item menu-item menu-item-type-taxonomy menu-item-object-content_category menu-item-722"><a href="#" class="nav-link">Mysore</a></li>
-                                                 <li id="menu-item-723" class="nav-item menu-item menu-item-type-taxonomy menu-item-object-content_category menu-item-723"><a href="#" class="nav-link">Goa</a></li>
-
-                                              </ul>
-                                           <i class="fas fa-chevron-down"></i></li>
-
-                                           <li id="menu-item-316" class="nav-item menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children dropdown menu-item-316" data-dropdown="dropdown">
-                                              <a href="#" class="nav-link">Categories<i class="fas fa-chevron-down"></i></a>
-                                              <ul role="menu" class="dropdown-menu">
-                                                 <li id="menu-item-1172" class="nav-item menu-item menu-item-type-post_type menu-item-object-page menu-item-1172"><a href="#" class="nav-link">Historical</a></li>
-                                                 <li id="menu-item-1214" class="nav-item menu-item menu-item-type-post_type menu-item-object-page menu-item-1214"><a href="#" class="nav-link">Naturistic</a></li>
-                                                 <li id="menu-item-1188" class="nav-item menu-item menu-item-type-post_type menu-item-object-page menu-item-1188"><a href="#" class="nav-link">Mega Cities</a></li>
-                                                 <li id="menu-item-1217" class="nav-item menu-item menu-item-type-post_type menu-item-object-page menu-item-1217"><a href="#" class="nav-link">National Parks</a></li>
-                                                 <li id="menu-item-1218" class="nav-item menu-item menu-item-type-custom menu-item-object-custom menu-item-1218"><a href="#" class="nav-link">Island</a></li>
-                                              </ul>
-                                           <i class="fas fa-chevron-down"></i></li>
-                                           <li id="menu-item-319" class="nav-item menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children dropdown menu-item-319" data-dropdown="dropdown">
-                                              <a href="#" class="nav-link">Blog</a>
-                                           <i class="fas fa-chevron-down"></i></li>
-
-                                        </ul>
-                                      </div>
-                                   </nav>
-                                </div>
-                                <ul class="social-links">
-                                   <li><a href="https://www.facebook.com" class="facebook" title="Facebook" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
-                                   <li><a href="https://twitter.com" class="twitter" title="Twitter" target="_blank"><i class="fab fa-twitter"></i></a></li>
-                                   <li><a href="https://plus.google.com" class="googleplus" title="Google+" target="_blank"><i class="fab fa-google-plus-g"></i></a></li>
-                                   <li><a href="https://www.instagram.com" class="instagram" title="Instagram" target="_blank"><i class="fab fa-instagram"></i></a></li>
-                                   <li><a href="https://www.youtube.com" class="youtube" title="YouTube" target="_blank"><i class="fab fa-youtube"></i></a></li>
-                                   <li><a href="https://en.wikipedia.org" class="wikipedia" title="Wikipedia" target="_blank"><i class="fab fa-wikipedia-w"></i></a></li>
-                                </ul>
-                              <div class="row" id="cty">
-                               <div class="col-lg-12 col-md-12 col-xs-12 ctcl">
-                                 <img src="wp-content/uploads/2017/09/wtcblr.jpg" alt="Avatar" class="image">
-                                  <div class="overlay">
-                                   <div class="text">Bangalore</div>
-                                  </div>
-                               </div>
-                               <div class="col-lg-12 col-md-12 col-xs-12 ctcl">
-                                 <img src="wp-content/uploads/2017/09/wtcblr.jpg" alt="Avatar" class="image">
-                                  <div class="overlay">
-                                   <div class="text">Bangalore</div>
-                                  </div>
-                               </div>
-                               <div class="col-lg-12 col-md-12 col-xs-12 ctcl">
-                                 <img src="wp-content/uploads/2017/09/wtcblr.jpg" alt="Avatar" class="image">
-                                  <div class="overlay">
-                                   <div class="text">Bangalore</div>
-                                  </div>
-                               </div>
-                               <div class="col-lg-12 col-md-12 col-xs-12 ctcl">
-                                 <img src="wp-content/uploads/2017/09/wtcblr.jpg" alt="Avatar" class="image">
-                                  <div class="overlay">
-                                   <div class="text">Bangalore</div>
-                                  </div>
-                               </div>
-                               <div class="col-lg-12 col-md-12 col-xs-12 ctcl">
-                                 <img src="wp-content/uploads/2017/09/wtcblr.jpg" alt="Avatar" class="image">
-                                  <div class="overlay">
-                                   <div class="text">Bangalore</div>
-                                  </div>
-                               </div>
-                               <div class="col-lg-12 col-md-12 col-xs-12 ctcl">
-                                 <img src="wp-content/uploads/2017/09/wtcblr.jpg" alt="Avatar" class="image">
-                                  <div class="overlay">
-                                   <div class="text">Bangalore</div>
-                                  </div>
-                               </div>
-                              </div>
-                             </div><div class="scroll-element scroll-x"><div class="scroll-element_outer"><div class="scroll-element_size"></div><div class="scroll-element_track"></div><div class="scroll-bar" style="width: 104px;"></div></div></div><div class="scroll-element scroll-y"><div class="scroll-element_outer"><div class="scroll-element_size"></div><div class="scroll-element_track"></div><div class="scroll-bar" style="height: 100px;"></div></div></div></div>
-                          </div>
-                       </div>
-                    </div>
                  </div>
               </div>
            </div>
         </div>
         <header class="mobile-header">
            <div class="header-logo">
-              <div class="logo"><a href="index.php" class="site-logo" title="Wikilogy"><img alt="Wikilogy" src="wp-content/uploads/2017/10/logo.png"/></a></div>
+              <div class="logo"><a href="index.php" class="site-logo" title="Wikilogy"><img alt="Wikilogy" src="images/logo.png"/></a></div>
            </div>
            <div class="mobile-menu-icon"> <span></span> <span></span> <span></span></div>
         </header>
@@ -291,7 +133,7 @@ var pht=$('.cin img').height();
               <div class="close-button"></div>
               <div class="content-wrapper scrollbar-outer">
                  <div class="header-logo">
-                    <div class="logo"><a href="index.php" class="site-logo" title="Wikilogy"><img alt="Wikilogy" src="wp-content/uploads/2017/10/logo.png"/></a></div>
+                    <div class="logo"><a href="index.php" class="site-logo" title="Wikilogy"><img alt="Wikilogy" src="images/logo.png"/></a></div>
                  </div>
                  <div class="header-sidebar-menu">
                     <nav class="navbar">
@@ -317,17 +159,7 @@ var pht=$('.cin img').height();
                                </ul>
                             </li>
 
-                            <li id="menu-item-316" class="nav-item menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children dropdown menu-item-316" data-dropdown="dropdown">
-                               <a href="#" class="nav-link">Categories<i class="fas fa-chevron-down"></i></a>
-                               <ul role="menu" class="dropdown-menu">
-                                  <li id="menu-item-1172" class="nav-item menu-item menu-item-type-post_type menu-item-object-page menu-item-1172"><a href="#" class="nav-link">Historical</a></li>
-                                  <li id="menu-item-1214" class="nav-item menu-item menu-item-type-post_type menu-item-object-page menu-item-1214"><a href="#" class="nav-link">Naturistic</a></li>
-                                  <li id="menu-item-1188" class="nav-item menu-item menu-item-type-post_type menu-item-object-page menu-item-1188"><a href="#" class="nav-link">Mega Cities</a></li>
-                                  <li id="menu-item-1217" class="nav-item menu-item menu-item-type-post_type menu-item-object-page menu-item-1217"><a href="#" class="nav-link">National Parks</a></li>
-                                  <li id="menu-item-1218" class="nav-item menu-item menu-item-type-custom menu-item-object-custom menu-item-1218"><a href="#" class="nav-link">Island</a></li>
-                               </ul>
-                            </li>
-                            <li id="menu-item-319" class="nav-item menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children dropdown menu-item-319" data-dropdown="dropdown">
+                                                        <li id="menu-item-319" class="nav-item menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children dropdown menu-item-319" data-dropdown="dropdown">
                                <a href="#" class="nav-link">Blog</a>
                             </li>
 
@@ -343,44 +175,6 @@ var pht=$('.cin img').height();
                     <li><a href="https://www.youtube.com" class="youtube" title="YouTube" target="_blank"><i class="fab fa-youtube"></i></a></li>
                     <li><a href="https://en.wikipedia.org" class="wikipedia" title="Wikipedia" target="_blank"><i class="fab fa-wikipedia-w"></i></a></li>
                  </ul>
-               <div class="row" id="cty">
-                <div class="col-lg-12 col-md-12 col-xs-12 ctcl">
-                  <img src="wp-content/uploads/2017/09/wtcblr.jpg" alt="Avatar" class="image">
-                   <div class="overlay">
-                    <div class="text">Bangalore</div>
-                   </div>
-                </div>
-                <div class="col-lg-12 col-md-12 col-xs-12 ctcl">
-                  <img src="wp-content/uploads/2017/09/wtcblr.jpg" alt="Avatar" class="image">
-                   <div class="overlay">
-                    <div class="text">Bangalore</div>
-                   </div>
-                </div>
-                <div class="col-lg-12 col-md-12 col-xs-12 ctcl">
-                  <img src="wp-content/uploads/2017/09/wtcblr.jpg" alt="Avatar" class="image">
-                   <div class="overlay">
-                    <div class="text">Bangalore</div>
-                   </div>
-                </div>
-                <div class="col-lg-12 col-md-12 col-xs-12 ctcl">
-                  <img src="wp-content/uploads/2017/09/wtcblr.jpg" alt="Avatar" class="image">
-                   <div class="overlay">
-                    <div class="text">Bangalore</div>
-                   </div>
-                </div>
-                <div class="col-lg-12 col-md-12 col-xs-12 ctcl">
-                  <img src="wp-content/uploads/2017/09/wtcblr.jpg" alt="Avatar" class="image">
-                   <div class="overlay">
-                    <div class="text">Bangalore</div>
-                   </div>
-                </div>
-                <div class="col-lg-12 col-md-12 col-xs-12 ctcl">
-                  <img src="wp-content/uploads/2017/09/wtcblr.jpg" alt="Avatar" class="image">
-                   <div class="overlay">
-                    <div class="text">Bangalore</div>
-                   </div>
-                </div>
-               </div>
               </div>
            </div>
         </div>
@@ -392,7 +186,7 @@ var pht=$('.cin img').height();
                 <div class="title-text" id="stitle">
                    <div class="text">Your Selected Destination</div>
                    <div class="title">
-                    
+
                    </div>
                 </div>
              </div>
@@ -410,9 +204,9 @@ var pht=$('.cin img').height();
                    <div id="myCarousel" class="carousel slide carousel-fade" data-ride="carousel">
                      <?php include_once "config.php";
                      $place=$_GET['q'];
-                     $sql=mysqli_query($conn,"select banner from mapdata where longname='$place'");
+                     $sql=mysqli_query($conn,"select banner from mapdata where wikiname='$place'");
                      $result=mysqli_fetch_array($sql);
-                     $mark1 = explode(',', $result['banner']);
+                     $imgurl = explode(',', $result['banner']);
                      ?>
                	    <ol class="carousel-indicators ci" id="indi">
                	      <li data-target="#myCarousel" data-slide-to="0" class="active" ></li>
@@ -424,17 +218,17 @@ var pht=$('.cin img').height();
                	    <div class="carousel-inner cin">
 
                	      <div class="item active">
-               	          <img src="<?php echo $mark1[0]; ?>" alt="Los Angeles" class="img1" >
+               	          <img src="<?php echo $imgurl[0]; ?>" alt="Los Angeles" class="img1" >
 
                	      </div>
 
                	      <div class="item">
-               	       <img src="<?php echo $mark1[1]; ?>" alt="Los Angeles" class="img2">
+               	       <img src="<?php echo $imgurl[1]; ?>" alt="Los Angeles" class="img2">
 
                	      </div>
 
                	      <div class="item">
-               	        <img src="<?php echo $mark1[2]; ?>" alt="Los Angeles" class="img3">
+               	        <img src="<?php echo $imgurl[2]; ?>" alt="Los Angeles" class="img3">
 
                	      </div>
 
@@ -451,21 +245,6 @@ var pht=$('.cin img').height();
                	  </div>
 
                    <div class="tcontent">
-<!--<p>
-  Karnataka is a state in the south western region of India. It was formed on 1 November 1956, with the passage of the States Reorganisation Act. Originally known as the State of Mysore, it was renamed Karnataka in 1973. The state corresponds to the Carnatic region. The capital and largest city is Bangalore (Bengaluru).
-
-  Karnataka is bordered by the Arabian Sea to the west, Goa to the northwest, Maharashtra to the north, Telangana to the northeast, Andhra Pradesh to the east, Tamil Nadu to the southeast, and Kerala to the south. The state covers an area of 191,976 square kilometres (74,122 sq mi), or 5.83 percent of the total geographical area of India. It is the seventh largest Indian state by area. With 61,130,704 inhabitants at the 2011 census, Karnataka is the eighth largest state by population, comprising 30 districts. Kannada, one of the classical languages of India, is the most widely spoken and official language of the state alongside Konkani, Tulu, Tamil, Telugu, Kodava, Beary. Karnataka also has the only 3 naturally Sanskrit-speaking districts in India.
-
-  The two main river systems of the state are the Krishna and its tributaries, the Bhima, Ghataprabha, Vedavathi, Malaprabha, and Tungabhadra, in the north, and the Kaveri and its tributaries, the Hemavati, Shimsha, Arkavati, Lakshmana Thirtha and Kabini, in the south. Most of these rivers flow out of Karnataka eastward, reaching the sea at the Bay of Bengal.
-
-  Though several etymologies have been suggested for the name Karnataka, the generally accepted one is that Karnataka is derived from the Kannada words karu and nādu, meaning "elevated land". Karu nadu may also be read as karu, meaning "black", and nadu, meaning "region", as a reference to the black cotton soil found in the Bayalu Seeme region of the state. The British used the word Carnatic, sometimes Karnatak, to describe both sides of peninsular India, south of the Krishna.
-
-  With an antiquity that dates to the paleolithic, Karnataka has been home to some of the most powerful empires of ancient and medieval India. The philosophers and musical bards patronised by these empires launched socio-religious and literary movements which have endured to the present day. Karnataka has contributed significantly to both forms of Indian classical music, the Carnatic and Hindustani traditions.
-
-  Karnataka's pre-history goes back to a paleolithic hand-axe culture evidenced by discoveries of, among other things, hand axes and cleavers in the region. Evidence of neolithic and megalithic cultures have also been found in the state. Gold discovered in Harappa was found to be imported from mines in Karnataka, prompting scholars to hypothesise about contacts between ancient Karnataka and the Indus Valley Civilisation ca. 3300 BCE.
-
-
-<p>-->
 </div>
 
 <!--<div class="suggestionpanel">
@@ -565,7 +344,7 @@ var pht=$('.cin img').height();
                                </div>
                     </div>
                  </div>
-                 <div class="col-lg-12 col-xs-12 col-sm-12">
+                 <div class="col-lg-12 col-xs-12 col-sm-12 nopadd">
                    <div class="dinf" id="distanceinfo">
                      <h3>Distance:</h3>
                    <div class="row mp">
@@ -606,20 +385,20 @@ var pht=$('.cin img').height();
     <?php include("suggested.php")?>
           </div>
           <!-- Bullet Navigator -->
-          <div data-u="navigator" class="jssorb057" style="position:absolute;bottom:12px;right:12px;" data-autocenter="1" data-scale="0.5" data-scale-bottom="0.75">
+          <!--<div data-u="navigator" class="jssorb057" style="position:absolute;bottom:12px;right:12px;" data-autocenter="1" data-scale="0.5" data-scale-bottom="0.75">
               <div data-u="prototype" class="i" style="width:16px;height:16px;">
                   <svg viewbox="0 0 16000 16000" style="position:absolute;top:0;left:0;width:100%;height:100%;">
                       <circle class="b" cx="8000" cy="8000" r="5000"></circle>
                   </svg>
               </div>
-          </div>
+          </div>-->
           <!-- Arrow Navigator -->
-          <div  data-u="arrowleft" class="jssora073" style="width:50px;height:50px;top:0px;left:30px;" data-autocenter="2" data-scale="0.75" data-scale-left="0.75">
+          <div  data-u="arrowleft" class="jssora073" id="leftnav" style="width:50px;height:50px;top:0px;left:30px;" data-autocenter="2" data-scale="0.75" data-scale-left="0.75">
               <svg viewbox="0 0 16000 16000" style="position:absolute;top:0;left:0;width:100%;height:100%;">
                   <path class="a" d="M4037.7,8357.3l5891.8,5891.8c100.6,100.6,219.7,150.9,357.3,150.9s256.7-50.3,357.3-150.9 l1318.1-1318.1c100.6-100.6,150.9-219.7,150.9-357.3c0-137.6-50.3-256.7-150.9-357.3L7745.9,8000l4216.4-4216.4 c100.6-100.6,150.9-219.7,150.9-357.3c0-137.6-50.3-256.7-150.9-357.3l-1318.1-1318.1c-100.6-100.6-219.7-150.9-357.3-150.9 s-256.7,50.3-357.3,150.9L4037.7,7642.7c-100.6,100.6-150.9,219.7-150.9,357.3C3886.8,8137.6,3937.1,8256.7,4037.7,8357.3 L4037.7,8357.3z"></path>
               </svg>
           </div>
-          <div data-u="arrowright" class="jssora073" style="width:50px;height:50px;top:0px;right:30px;" data-autocenter="2" data-scale="0.75" data-scale-right="0.75">
+          <div data-u="arrowright" class="jssora073" id="rightnav" style="width:50px;height:50px;top:0px;right:30px;" data-autocenter="2" data-scale="0.75" data-scale-right="0.75">
               <svg viewbox="0 0 16000 16000" style="position:absolute;top:0;left:0;width:100%;height:100%;">
                   <path class="a" d="M11962.3,8357.3l-5891.8,5891.8c-100.6,100.6-219.7,150.9-357.3,150.9s-256.7-50.3-357.3-150.9 L4037.7,12931c-100.6-100.6-150.9-219.7-150.9-357.3c0-137.6,50.3-256.7,150.9-357.3L8254.1,8000L4037.7,3783.6 c-100.6-100.6-150.9-219.7-150.9-357.3c0-137.6,50.3-256.7,150.9-357.3l1318.1-1318.1c100.6-100.6,219.7-150.9,357.3-150.9 s256.7,50.3,357.3,150.9l5891.8,5891.8c100.6,100.6,150.9,219.7,150.9,357.3C12113.2,8137.6,12062.9,8256.7,11962.3,8357.3 L11962.3,8357.3z"></path>
               </svg>
@@ -787,7 +566,7 @@ var pht=$('.cin img').height();
            </div>
            <div class="footer-copyright">
               <div class="container">
-                 <a href="index.php" class="footer-logo" title="Wikilogy"><img src="wp-content/uploads/2017/10/logo.png" alt="Wikilogy"/></a>
+                 <a href="index.php" class="footer-logo" title="Wikilogy"><img src="images/logo.png" alt="Wikilogy"/></a>
                  <p>Razorbee Online solutions © Copyright 2018 - All rights reserved.</p>
               </div>
            </div>
@@ -850,9 +629,6 @@ var pht=$('.cin img').height();
   </div><noscript id="wpfc-google-fonts"><link href='http://fonts.googleapis.com/css?family=Merriweather:200,200i,300,300i,400,400i,500,500i,600,600i,700,700i&amp;subset=cyrillic,cyrillic-ext,greek,greek-ext,latin-ext' rel='stylesheet' type='text/css'>
 <link href='http://fonts.googleapis.com/css?family=Oswald:200,200i,300,300i,400,400i,500,500i,600,600i,700,700i&amp;subset=cyrillic,cyrillic-ext,greek,greek-ext,latin-ext' rel='stylesheet' type='text/css'>
 </noscript>
-<script>var wpcf7={"apiSettings":{"root":"http:\/\/demo.gloriathemes.com\/wp\/wikilogy\/wp-json\/contact-form-7\/v1","namespace":"contact-form-7\/v1"},"recaptcha":{"messages":{"empty":"Please verify that you are not a robot."}}};</script>
-<script>var ptajax={"ajaxurl":"http:\/\/demo.gloriathemes.com\/wp\/wikilogy\/wp-admin\/admin-ajax.php"};</script>
-<script src='wp-content/cache/wpfc-minified/e3pbk41j/2ir3q.js' type="text/javascript"></script>
 <script>(function(){
 if(!window.mc4wp){
 window.mc4wp={
@@ -886,7 +662,7 @@ $('.header').removeClass('fixed-header');
 $('.mobile-header').removeClass('fixed-header');
 }});
 });});</script>
-<script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?key=AIzaSyBIi0IcN-SFCdy9mQmkSTzxgq_BhX-ibJE&v=3.exp&sensor=false&libraries=places,drawing,geometry"></script>
+<script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?key=AIzaSyBwdyZRcWbW_FmB2K0MMSxpp31jxHNyAyw&v=3.exp&sensor=false&libraries=places,drawing,geometry"></script>
 <script>
 txt ="<?php echo $_GET['q']; ?>";
 $.ajax({
@@ -896,8 +672,8 @@ $.ajax({
         async: false,
         dataType: "json",
         success: function (data, textStatus, jqXHR) {
-         console.log(data);
-          //  var markup = data.parse.text["*"];
+          //console.log(data);
+           //var markup = data.parse.text["*"];
             var blurb = $('<div></div>').html(data);
             // remove links as they will not work
             //blurb.find('a').each(function() { $(this).replaceWith($(this).html()); });
@@ -916,7 +692,6 @@ $.ajax({
      });*/
         },
         error: function (errorMessage) {
-
         }
     });
 
@@ -1010,11 +785,11 @@ function GetRoute() {
           $('#dvDistance').append('<h5>Duration :'+duration+'</h5>');
 
         } else {
-            alert("Unable to find the distance via road.");
+          //  alert("Unable to find the distance via road.");
         }
     });
 }
-$(window).on('scroll',function() {
+/*$(window).on('scroll',function() {
   var flag = $('#dvDistance h5').length;
   if(flag==0)
   {
@@ -1039,7 +814,7 @@ $(window).on('scroll',function() {
 
     if (eval == "object visible") return ((y < (viewportHeight + scrolltop)) && (y > (scrolltop - elementHeight)));
     if (eval == "above") return ((y < (viewportHeight + scrolltop)));
-}
+}*/
 </script>
 <script src="js/jquery-1.11.3.min.js" type="text/javascript"></script>
 <script src="js/jssor.slider-27.4.0.min.js" type="text/javascript"></script>
@@ -1050,7 +825,7 @@ $(window).on('scroll',function() {
             $AutoPlay: 2,
             $AutoPlaySteps: 1,
             $SlideDuration: 160,
-            $SlideWidth: 350,
+            $SlideWidth: 325,
             $SlideSpacing: 10,
             $Loop : 0,
             $SlideEasing: $Jease$.$OutQuad,

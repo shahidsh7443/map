@@ -1,0 +1,58 @@
+{
+   "results" : [
+      {
+         "address_components" : [
+            {
+               "long_name" : "Bandipura Tiger Reserve And National Park",
+               "short_name" : "Bandipura Tiger Reserve And National Park",
+               "types" : [ "establishment", "park", "point_of_interest" ]
+            },
+            {
+               "long_name" : "Bandipur",
+               "short_name" : "Bandipur",
+               "types" : [ "locality", "political" ]
+            },
+            {
+               "long_name" : "Karnataka",
+               "short_name" : "KA",
+               "types" : [ "administrative_area_level_1", "political" ]
+            },
+            {
+               "long_name" : "India",
+               "short_name" : "IN",
+               "types" : [ "country", "political" ]
+            },
+            {
+               "long_name" : "571126",
+               "short_name" : "571126",
+               "types" : [ "postal_code" ]
+            }
+         ],
+         "formatted_address" : "Bandipura Tiger Reserve And National Park, NH 67, Hangala Village, Gundlupet Taluk, Chamarajanagar District, Bandipur, Karnataka 571126, India",
+         "geometry" : {
+            "location" : {
+               "lat" : 11.7584093,
+               "lng" : 76.44538370000001
+            },
+            "location_type" : "GEOMETRIC_CENTER",
+            "viewport" : {
+               "northeast" : {
+                  "lat" : 11.7597582802915,
+                  "lng" : 76.44673268029152
+               },
+               "southwest" : {
+                  "lat" : 11.7570603197085,
+                  "lng" : 76.44403471970851
+               }
+            }
+         },
+         "place_id" : "ChIJOzbm3aiqqDsRe5NVz7skBhI",
+         "plus_code" : {
+            "compound_code" : "QC5W+95 Berambadi State Forest, Karnataka, India",
+            "global_code" : "7J3RQC5W+95"
+         },
+         "types" : [ "establishment", "park", "point_of_interest" ]
+      }
+   ],
+   "status" : "OK"
+}

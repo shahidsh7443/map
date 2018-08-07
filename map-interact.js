@@ -67,7 +67,7 @@ function addEvent(id,relationId){
 				x=(x+tipw>$(document).scrollLeft()+$(window).width())? x-tipw-(20*2) : x
 				y=(y+tiph>$(document).scrollTop()+$(window).height())? $(document).scrollTop()+$(window).height()-tiph-10 : y
 				$('#'+id).css({'fill':map_config[id]['downColor']});
-				$('#map-tip').show().html(map_config[id]['hover']);
+				$('#map-tip').show().html("------"+map_config[id]['hover']);
 				$('#map-tip').css({left:x, top:y})
 			})
 			_obj.on('touchend', function(){
@@ -81,7 +81,7 @@ function addEvent(id,relationId){
 		}
 		_obj.attr({'cursor':'pointer'});
 		_obj.hover(function(){
-			$('#map-tip').show().html(map_config[id]['hover']);
+			$('#map-tip').show().html("<div class='hoverbox'>"+map_config[id]['hover']+"</div>");
 			_obj.css({'fill':map_config[id]['overColor']})
 		},function(){
 			$('#map-tip').hide();
@@ -103,7 +103,7 @@ function addEvent(id,relationId){
 			var tipw=$('#map-tip').outerWidth(), tiph=$('#map-tip').outerHeight(),
 			x=(x+tipw>$(document).scrollLeft()+$(window).width())? x-tipw-(20*2) : x
 			y=(y+tiph>$(document).scrollTop()+$(window).height())? $(document).scrollTop()+$(window).height()-tiph-10 : y
-			$('#map-tip').css({left:x, top:y})
+			$('#map-tip').css({left:x-10, top:y-50})
 		})
 	}
 }

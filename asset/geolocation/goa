@@ -1,0 +1,49 @@
+{
+   "results" : [
+      {
+         "address_components" : [
+            {
+               "long_name" : "Goa",
+               "short_name" : "GA",
+               "types" : [ "administrative_area_level_1", "political" ]
+            },
+            {
+               "long_name" : "India",
+               "short_name" : "IN",
+               "types" : [ "country", "political" ]
+            }
+         ],
+         "formatted_address" : "Goa, India",
+         "geometry" : {
+            "bounds" : {
+               "northeast" : {
+                  "lat" : 15.799917,
+                  "lng" : 74.3405329
+               },
+               "southwest" : {
+                  "lat" : 14.8945089,
+                  "lng" : 73.684082
+               }
+            },
+            "location" : {
+               "lat" : 15.2993265,
+               "lng" : 74.12399599999999
+            },
+            "location_type" : "APPROXIMATE",
+            "viewport" : {
+               "northeast" : {
+                  "lat" : 15.799917,
+                  "lng" : 74.3405329
+               },
+               "southwest" : {
+                  "lat" : 14.8945089,
+                  "lng" : 73.684082
+               }
+            }
+         },
+         "place_id" : "ChIJQbc2YxC6vzsRkkDzYv-H-Oo",
+         "types" : [ "administrative_area_level_1", "political" ]
+      }
+   ],
+   "status" : "OK"
+}

@@ -42,7 +42,7 @@
 	},
 	'map_5':{
 		'hover': 'CHHATTISGARH',
-		'url':'http://localhost/wikilogy/mpdata.php?q=chattisgarh&id=5',
+		'url':'http://localhost/wikilogy/mpdata.php?q=chhattisgarh&id=5',
 		'target':'same_window',
 		'upColor':'#EBECED',
 		'overColor':'#FFEE88',
@@ -87,7 +87,7 @@
 	},
 	'map_10':{
 		'hover': 'JAMMU AND KASHMIR',
-		'url':'http://localhost/wikilogy/mpdata.php?q=jammu%20and%20kashmir&id=10',
+		'url':'http://localhost/wikilogy/mpdata.php?q=jammu_and_kashmir&id=10',
 		'target':'same_window',
 		'upColor':'#EBECED',
 		'overColor':'#FFEE88',

@@ -3700,7 +3700,7 @@ a.gt-ref-tooltip:visited{font-size:12px;}
 pre,
 div.wpb_button,
 div.wpb_content_element,
-ul.wpb_thumbnails-fluid>li, p{margin-bottom:2.308rem;}
+ul.wpb_thumbnails-fluid>li, p{margin-bottom:0;}
 .wp-caption{clear:both;margin-bottom:2.308rem !important;}
 ol, ul{margin-bottom:2.308rem;}
 ul.column-3 li,

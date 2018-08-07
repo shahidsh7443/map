@@ -1,0 +1,64 @@
+{
+   "results" : [
+      {
+         "address_components" : [
+            {
+               "long_name" : "Hampi",
+               "short_name" : "Hampi",
+               "types" : [ "locality", "political" ]
+            },
+            {
+               "long_name" : "Bellary",
+               "short_name" : "Bellary",
+               "types" : [ "administrative_area_level_2", "political" ]
+            },
+            {
+               "long_name" : "Karnataka",
+               "short_name" : "KA",
+               "types" : [ "administrative_area_level_1", "political" ]
+            },
+            {
+               "long_name" : "India",
+               "short_name" : "IN",
+               "types" : [ "country", "political" ]
+            },
+            {
+               "long_name" : "583239",
+               "short_name" : "583239",
+               "types" : [ "postal_code" ]
+            }
+         ],
+         "formatted_address" : "Hampi, Karnataka 583239, India",
+         "geometry" : {
+            "bounds" : {
+               "northeast" : {
+                  "lat" : 15.3369639,
+                  "lng" : 76.4704284
+               },
+               "southwest" : {
+                  "lat" : 15.3294158,
+                  "lng" : 76.45624100000001
+               }
+            },
+            "location" : {
+               "lat" : 15.3350132,
+               "lng" : 76.46002399999999
+            },
+            "location_type" : "APPROXIMATE",
+            "viewport" : {
+               "northeast" : {
+                  "lat" : 15.3369639,
+                  "lng" : 76.4704284
+               },
+               "southwest" : {
+                  "lat" : 15.3294158,
+                  "lng" : 76.45624100000001
+               }
+            }
+         },
+         "place_id" : "ChIJI-hLXdl_tzsRuDbfdlDgUm4",
+         "types" : [ "locality", "political" ]
+      }
+   ],
+   "status" : "OK"
+}

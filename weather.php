@@ -19,7 +19,6 @@ $.ajax({
         type  : "GET",
         url: "http://api.openweathermap.org/data/2.5/weather?lat="+lat+"&lon="+lon+"&units=metric&cnt=7&lang=en&APPID=de78f33e2d51bdf4c7468874ed89ca9f",
         success: function (data, textStatus, jqXHR) {
-          console.log(data);
           if(data &&  data.main && data.main.temp){
           var imgsource="http://openweathermap.org/img/w/"+data.weather[0].icon+".png";
           var roundtemp = data.main.temp;

@@ -111,7 +111,7 @@ $('#roll').css({'height': wheight-hgt});
               <div class="container">
                  <div class="main-content d-flex justify-content-between align-items-center">
                     <div class="header-logo">
-                       <div class="logo"><a href="index.php" class="site-logo" title="Wikilogy"><img alt="Wikilogy" src="wp-content/uploads/2017/10/logo.png"/></a></div>
+                       <div class="logo"><a href="index.php" class="site-logo" title="Wikilogy"><img alt="Wikilogy" src="images/logo.png"/></a></div>
                     </div>
                     <div class="mainmenu">
                        <nav class="navbar navbar-expand-lg" id="nvbar">
@@ -136,17 +136,6 @@ $('#roll').css({'height': wheight-hgt});
 
                                    </ul>
                                 </li>
-
-                                <li id="menu-item-316" class="nav-item menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children dropdown menu-item-316" data-dropdown="dropdown">
-                                   <a href="#" class="nav-link">Categories<i class="fas fa-chevron-down"></i></a>
-                                   <ul role="menu" class="dropdown-menu">
-                                      <li id="menu-item-1172" class="nav-item menu-item menu-item-type-post_type menu-item-object-page menu-item-1172"><a href="#" class="nav-link">Historical</a></li>
-                                      <li id="menu-item-1214" class="nav-item menu-item menu-item-type-post_type menu-item-object-page menu-item-1214"><a href="#" class="nav-link">Naturistic</a></li>
-                                      <li id="menu-item-1188" class="nav-item menu-item menu-item-type-post_type menu-item-object-page menu-item-1188"><a href="#" class="nav-link">Mega Cities</a></li>
-                                      <li id="menu-item-1217" class="nav-item menu-item menu-item-type-post_type menu-item-object-page menu-item-1217"><a href="#" class="nav-link">National Parks</a></li>
-                                      <li id="menu-item-1218" class="nav-item menu-item menu-item-type-custom menu-item-object-custom menu-item-1218"><a href="#" class="nav-link">Island</a></li>
-                                   </ul>
-                                </li>
                                 <li id="menu-item-319" class="nav-item menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children dropdown menu-item-319" data-dropdown="dropdown">
                                    <a href="#" class="nav-link">Blog</a>
                                 </li>
@@ -155,7 +144,7 @@ $('#roll').css({'height': wheight-hgt});
                           </div>
                        </nav>
                     </div>
-                    <div class="elements">
+                    <!--<div class="elements">
                        <div class="item header-user-box">
                           <div class="icon">
                              <a href="#" data-target="#user_login_popup" data-toggle="modal" title="Login"><i class="fas fa-user"></i></a>
@@ -216,7 +205,7 @@ $('#roll').css({'height': wheight-hgt});
                              <div class="close-button"></div>
                              <div class="content-wrapper scrollbar-outer">
                                 <div class="header-logo">
-                                   <div class="logo"><a href="index.php" class="site-logo" title="Wikilogy"><img alt="Wikilogy" src="wp-content/uploads/2017/10/logo.png"/></a></div>
+                                   <div class="logo"><a href="index.php" class="site-logo" title="Wikilogy"><img alt="Wikilogy" src="images/logo.png"/></a></div>
                                 </div>
                                 <div class="header-sidebar-menu">
                                    <nav class="navbar">
@@ -309,14 +298,14 @@ $('#roll').css({'height': wheight-hgt});
                              </div>
                           </div>
                        </div>
-                    </div>
+                    </div>-->
                  </div>
               </div>
            </div>
         </div>
         <header class="mobile-header">
            <div class="header-logo">
-              <div class="logo"><a href="index.php" class="site-logo" title="Wikilogy"><img alt="Wikilogy" src="wp-content/uploads/2017/10/logo.png"/></a></div>
+              <div class="logo"><a href="index.php" class="site-logo" title="Wikilogy"><img alt="Wikilogy" src="images/logo.png"/></a></div>
            </div>
            <div class="mobile-menu-icon"> <span></span> <span></span> <span></span></div>
         </header>
@@ -326,7 +315,7 @@ $('#roll').css({'height': wheight-hgt});
               <div class="close-button"></div>
               <div class="content-wrapper scrollbar-outer">
                  <div class="header-logo">
-                    <div class="logo"><a href="index.php" class="site-logo" title="Wikilogy"><img alt="Wikilogy" src="wp-content/uploads/2017/10/logo.png"/></a></div>
+                    <div class="logo"><a href="index.php" class="site-logo" title="Wikilogy"><img alt="Wikilogy" src="images/logo.png"/></a></div>
                  </div>
                  <div class="header-sidebar-menu">
                     <nav class="navbar">
@@ -352,16 +341,7 @@ $('#roll').css({'height': wheight-hgt});
                                              </ul>
                                           </li>
 
-                                          <li id="menu-item-316" class="nav-item menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children dropdown menu-item-316" data-dropdown="dropdown">
-                                             <a href="#" class="nav-link">Categories<i class="fas fa-chevron-down"></i></a>
-                                             <ul role="menu" class="dropdown-menu">
-                                                <li id="menu-item-1172" class="nav-item menu-item menu-item-type-post_type menu-item-object-page menu-item-1172"><a href="#" class="nav-link">Historical</a></li>
-                                                <li id="menu-item-1214" class="nav-item menu-item menu-item-type-post_type menu-item-object-page menu-item-1214"><a href="#" class="nav-link">Naturistic</a></li>
-                                                <li id="menu-item-1188" class="nav-item menu-item menu-item-type-post_type menu-item-object-page menu-item-1188"><a href="#" class="nav-link">Mega Cities</a></li>
-                                                <li id="menu-item-1217" class="nav-item menu-item menu-item-type-post_type menu-item-object-page menu-item-1217"><a href="#" class="nav-link">National Parks</a></li>
-                                                <li id="menu-item-1218" class="nav-item menu-item menu-item-type-custom menu-item-object-custom menu-item-1218"><a href="#" class="nav-link">Island</a></li>
-                                             </ul>
-                                          </li>
+
                                           <li id="menu-item-319" class="nav-item menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children dropdown menu-item-319" data-dropdown="dropdown">
                                              <a href="#" class="nav-link">Blog</a>
                                           </li>
@@ -402,13 +382,8 @@ $('#roll').css({'height': wheight-hgt});
         </div>
         <div class="site-sub-content">
            <div class="container">
-              <div class="row">
-                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 fullwidthsidebar">
-                    <div class="post-content">
-                       <div data-vc-full-width="true" data-vc-full-width-init="false" data-vc-stretch-content="true" class="vc_row wpb_row vc_row-fluid overflowVisible vc_row-no-padding">
-                          <div class="wpb_column vc_column_container vc_col-sm-12 vc_col-lg-6 vc_col-md-8 vc_col-xs-12">
-                             <div class="vc_column-inner">
-                                <div class="wpb_wrapper">
+              <div class="row" id="hidemargin">
+                 <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12 nopadd">
                                   <span id="map-tip"></span>
 <div id="mapwrapper">
  <div id="map_base">
@@ -424,15 +399,10 @@ include("mapcode.php");
 </div>
 <div class="clear"></div>
                                 </div>
-                             </div>
-                          </div>
-                          <div class="wpb_column vc_column_container vc_col-sm-12 vc_col-lg-6 vc_col-md-4 vc_col-xs-12"  id="roll">
-                             <div class="vc_column-inner">
-                                <div class="wpb_wrapper">
-                                   <div class="vc_row wpb_row vc_inner vc_row-fluid content-based-left vc_custom_1506448862177 vc_row-has-fill">
-                                      <div class="wpb_column vc_column_container vc_col-sm-12">
-                                         <div class="vc_column-inner vc_custom_1506449715100">
-                                            <div class="wpb_wrapper">
+                           <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12 fullwidthsidebar" id="roll">
+
+
+
                                                <div class="letters-list style-1">
                                                   <ul>
                                                      <li><a href="#" title="A">A</a></li>
@@ -464,10 +434,7 @@ include("mapcode.php");
                                                      <li><a href="#" title="#" target="_parent">#</a></li>
                                                   </ul>
                                                </div>
-                                            </div>
-                                         </div>
-                                      </div>
-                                   </div>
+
                                    <div class="vc_row wpb_row vc_inner vc_row-fluid content-based-left vc_custom_1506448862177 vc_row-has-fill">
                                       <div class="wpb_column vc_column_container vc_col-sm-12">
                                          <div class="vc_column-inner vc_custom_1506449715100">
@@ -548,10 +515,10 @@ include("mapcode.php");
                                          </div>
                                       </div>
                                    </div>
-                                </div>
-                             </div>
+
+
                           </div>
-                       </div>
+
                        <div class="vc_row-full-width vc_clearfix"></div>
                        <div class="vc_row wpb_row vc_row-fluid">
                           <div class="wpb_column vc_column_container vc_col-sm-12">
@@ -973,21 +940,10 @@ include("mapcode.php");
                           </div>
                        </div>
                        <div class="vc_row-full-width vc_clearfix"></div>
-                    </div>
-                 </div>
+                 <!--</div>-->
                  <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 hide fixed-sidebar">
                     <div class="theiaStickySidebar">
-                       <div id="categories-2" class="general-sidebar-wrap widget-box widget_categories">
-                          <div class="widget-title">Categories</div>
-                          <ul>
-                             <li class="cat-item cat-item-364"><a href="category/cinema/index.html">Cinema</a> </li>
-                             <li class="cat-item cat-item-362"><a href="category/list/index.html">List</a> </li>
-                             <li class="cat-item cat-item-1"><a href="category/news/index.html">News</a> </li>
-                             <li class="cat-item cat-item-361"><a href="category/science/index.html">Science</a> </li>
-                             <li class="cat-item cat-item-363"><a href="category/technology/index.html">Technology</a> </li>
-                             <li class="cat-item cat-item-369"><a href="category/travel/index.html">Travel</a> </li>
-                          </ul>
-                       </div>
+
                        <div id="wikilogy_latest_posts_widget-3" class="general-sidebar-wrap widget-box widget_wikilogy_latest_posts_widget">
                           <div class="widget-title">Latest Posts</div>
                           <div class="widget-content">
@@ -1225,7 +1181,7 @@ include("mapcode.php");
            </div>
            <div class="footer-copyright">
               <div class="container">
-                 <a href="index.php" class="footer-logo" title="Wikilogy"><img src="wp-content/uploads/2017/10/logo.png" alt="Wikilogy"/></a>
+                 <a href="index.php" class="footer-logo" title="Wikilogy"><img src="images/logo.png" alt="Wikilogy"/></a>
                  <p>Razorbee Online solutions © Copyright 2018 - All rights reserved.</p>
               </div>
            </div>
