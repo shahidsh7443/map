@@ -9,11 +9,11 @@ if (file_exists($fileloc.$ql)) {
     //echo $myObj;
 }
 else {
-include_once('simple_html_dom.php');
+include_once('simple_html_dom1.php');
 $q= $_GET["q"];
 $q = str_replace('_',' ',$_GET["q"]);
 $url = "https://www.google.co.in/complete/search?client=travel_immersive&hl=en-IN&q=".$q;
-$str = get_web_page($url);
+$str = get_web_page2($url);
 //print_r($str);
 //exit();
 $str =  $str['content'];
@@ -42,6 +42,7 @@ for ($i=0; $i<count($element); $i++ ){
     array_push($myObj->list,$obj);
   }
 }
+
 $cached = fopen($fileloc.$ql, 'w');
 $myJSON = json_encode($myObj);
 fwrite($cached, $myJSON);
@@ -56,11 +57,11 @@ echo "</pre>";
 else{
   $suggestedlist = $myJSON;
 }
-function getData(){
+function getData2(){
   global $suggestedlist;
   return $suggestedlist;
 }
-function get_web_page( $url )
+function get_web_page2( $url )
 {
 //echo $url;
     $user_agent='Mozilla/5.0 (Windows NT 6.1; rv:8.0) Gecko/20100101 Firefox/8.0';

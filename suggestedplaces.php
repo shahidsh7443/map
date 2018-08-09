@@ -3,13 +3,13 @@
 $q= $_GET["q"];
 $suggestedlist;
 $fileloc = "asset/suggestedplaces/";
+$q = str_replace(' ','_',$q);
 if (file_exists($fileloc.$q)) {
     ob_start();
-    $myObj = file_get_contents($fileloc.$q);
+    $myJSON = file_get_contents($fileloc.$q);
 }else{
-    include('simple_html_dom.php');
+    include_once('simple_html_dom.php');
     $url = "https://www.google.co.in/complete/search?client=travel_immersive&hl=en-IN&q=".$q;
-    //echo $url;
     $content = get_web_page($url);
     $str =  $content['content'];
     $ar =  (explode('mid":"',$str));
@@ -19,7 +19,6 @@ if (file_exists($fileloc.$q)) {
     $content =  file_get_contents($url);
     $html = new simple_html_dom();
     $html->load($content);
-
     $element = $html->find(".gws-trips-desktop__city-card");
     $myObj = new stdClass;
     $myObj->status = "success";
@@ -33,8 +32,6 @@ if (file_exists($fileloc.$q)) {
         array_push($myObj->list,$obj);
       }
     }
-
-
     $cached = fopen($fileloc.$q, 'w');
     $myJSON = json_encode($myObj);
     fwrite($cached, $myJSON);
@@ -43,12 +40,12 @@ if (file_exists($fileloc.$q)) {
 
 if (isset($_GET["preveiw"])){
   echo "<pre>";
-  $myJSON=json_decode($myObj);
+  $myJSON=json_decode($myJSON);
   print_r($myJSON);
   echo "</pre>";
 }
 else{
-$suggestedlist = $myObj;
+$suggestedlist = $myJSON;
 //echo ($suggestedlist);
 }
 function getData(){

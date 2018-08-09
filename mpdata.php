@@ -45,22 +45,11 @@ $(document).ready(function(){
     $($("#jssor_1").children()[0]).attr('id','ctop');
     $($("#jssor_1").children()[2]).attr('id','rnav');
     $($("#jssor_1").children()[1]).attr('id','lnav');
-if($(window).width()>1030)
-{
-  var tt=$('.scroll-content').width();
-  $('#sidemen').css({'width': tt});
-var wheight=$(window).height();
-$('#map_base svg').css({'height': wheight-100});
-var hgt=$('.header-content').height();
-$('#roll').css({'height': wheight-hgt});
-//var cth=$('#werap').width();
-//$('#weather img').css({'width': cth});
-var pwt=$('.post-featured-header').width();
-var pht=$('.cin img').height();
- $('.post-featured-header img').css({'width': pwt});
-  $('.ctcl1 .image').css({'height': pht});
-   $('#clima').css({'height': pht});
-}
+    var titlewidth = $('.design').width();
+    $('.bgoverlay').css({'width': titlewidth});
+    var titlewidth1 = $('.design1').width();
+    $('.design1 .bgoverlay').css({'width': titlewidth1});
+    $('.design1 .placeimage img').css({'height':($('.design1 .placeimage').height())});
 });
 </script>
 </head>
@@ -202,12 +191,6 @@ var pht=$('.cin img').height();
                    <!--<div class="post-featured-header"><img width="1170" height="570" src="/wikilogy/wp-content/uploads/2017/09/ktp.jpg" class="attachment-wikilogy-post-1 size-wikilogy-post-1 wp-post-image" alt=""></div>-->
 
                    <div id="myCarousel" class="carousel slide carousel-fade" data-ride="carousel">
-                     <?php include_once "config.php";
-                     $place=$_GET['q'];
-                     $sql=mysqli_query($conn,"select banner from mapdata where wikiname='$place'");
-                     $result=mysqli_fetch_array($sql);
-                     $imgurl = explode(',', $result['banner']);
-                     ?>
                	    <ol class="carousel-indicators ci" id="indi">
                	      <li data-target="#myCarousel" data-slide-to="0" class="active" ></li>
                	      <li data-target="#myCarousel" data-slide-to="1"></li>
@@ -215,22 +198,7 @@ var pht=$('.cin img').height();
                	    </ol>
 
 
-               	    <div class="carousel-inner cin">
-
-               	      <div class="item active">
-               	          <img src="<?php echo $imgurl[0]; ?>" alt="Los Angeles" class="img1" >
-
-               	      </div>
-
-               	      <div class="item">
-               	       <img src="<?php echo $imgurl[1]; ?>" alt="Los Angeles" class="img2">
-
-               	      </div>
-
-               	      <div class="item">
-               	        <img src="<?php echo $imgurl[2]; ?>" alt="Los Angeles" class="img3">
-
-               	      </div>
+               	    <div class="carousel-inner cin homebanner">
 
                	    </div>
 
@@ -378,21 +346,19 @@ var pht=$('.cin img').height();
 <div class="col-lg-12 col-xs-12 col-sm-12">
   <div class="suggestionpanel">
     <h2 class="text-center">Suggested Places</h2>
-  <div id="jssor_1" style="position:relative;margin:0 auto;top:0px;left:0px;overflow:hidden;visibility:hidden;">
-          <!-- Loading Screen -->
-          <div data-u="slides" style="cursor:default;position:relative;top:0px;left:0px;overflow:hidden;" id="tourism">
+  <?php include("suggested.php")?>
+  </div>
+</div>
+</div>
 
-    <?php include("suggested.php")?>
+<!--<div class="row" id="visitrow">
+<div class="col-lg-12 col-xs-12 col-sm-12">
+  <div class="visitpanel">
+    <h2 class="text-center">To Visit Places</h2>
+    <div id="jssor_1" style="position:relative;margin:0 auto;top:0px;left:0px;overflow:hidden;visibility:hidden;">
+          <div data-u="slides" style="cursor:default;position:relative;top:0px;left:0px;overflow:hidden;" id="tourism">
+    <?php //include("statesuggest.php")?>
           </div>
-          <!-- Bullet Navigator -->
-          <!--<div data-u="navigator" class="jssorb057" style="position:absolute;bottom:12px;right:12px;" data-autocenter="1" data-scale="0.5" data-scale-bottom="0.75">
-              <div data-u="prototype" class="i" style="width:16px;height:16px;">
-                  <svg viewbox="0 0 16000 16000" style="position:absolute;top:0;left:0;width:100%;height:100%;">
-                      <circle class="b" cx="8000" cy="8000" r="5000"></circle>
-                  </svg>
-              </div>
-          </div>-->
-          <!-- Arrow Navigator -->
           <div  data-u="arrowleft" class="jssora073" id="leftnav" style="width:50px;height:50px;top:0px;left:30px;" data-autocenter="2" data-scale="0.75" data-scale-left="0.75">
               <svg viewbox="0 0 16000 16000" style="position:absolute;top:0;left:0;width:100%;height:100%;">
                   <path class="a" d="M4037.7,8357.3l5891.8,5891.8c100.6,100.6,219.7,150.9,357.3,150.9s256.7-50.3,357.3-150.9 l1318.1-1318.1c100.6-100.6,150.9-219.7,150.9-357.3c0-137.6-50.3-256.7-150.9-357.3L7745.9,8000l4216.4-4216.4 c100.6-100.6,150.9-219.7,150.9-357.3c0-137.6-50.3-256.7-150.9-357.3l-1318.1-1318.1c-100.6-100.6-219.7-150.9-357.3-150.9 s-256.7,50.3-357.3,150.9L4037.7,7642.7c-100.6,100.6-150.9,219.7-150.9,357.3C3886.8,8137.6,3937.1,8256.7,4037.7,8357.3 L4037.7,8357.3z"></path>
@@ -406,8 +372,7 @@ var pht=$('.cin img').height();
       </div>
   </div>
 </div>
-</div>
-
+</div>-->
 
 
        </div>
@@ -665,6 +630,7 @@ $('.mobile-header').removeClass('fixed-header');
 <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?key=AIzaSyBwdyZRcWbW_FmB2K0MMSxpp31jxHNyAyw&v=3.exp&sensor=false&libraries=places,drawing,geometry"></script>
 <script>
 txt ="<?php echo $_GET['q']; ?>";
+$(document).ready (function(){
 $.ajax({
         type: "GET",
         url: "placedata.php?state="+txt,
@@ -672,30 +638,29 @@ $.ajax({
         async: false,
         dataType: "json",
         success: function (data, textStatus, jqXHR) {
-          //console.log(data);
-           //var markup = data.parse.text["*"];
-            var blurb = $('<div></div>').html(data);
-            // remove links as they will not work
-            //blurb.find('a').each(function() { $(this).replaceWith($(this).html()); });
-
-            // remove any references
-            //blurb.find('sup').remove();
-
-            // remove cite error
-            //blurb.find('.mw-ext-cite-error').remove();
+            var blurb = $('<div></div>').html(data.content);
             $('.tcontent').html($(blurb));
-        /*  $('a').each(function(){
-        this.href = this.href.replace('/wiki/%', '1'); this.href = this.href.replace(l1+1, 'https://en.wikipedia.org/wiki/%');
-    });*//*
-          $('a').each(function(){
-         this.href = this.href.replace('/wiki/', '1'); this.href = this.href.replace(l1+1, 'https://en.wikipedia.org/wiki/');
-     });*/
+            images = data.banner.split(",");
+            var html = "";
+            for (var i = 0; i < images.length; i++) {
+              var __class = (i==0)?'active':'';
+              html += '<div class="item '+__class+'">  <img src="'+images[i]+'" alt="Los Angeles" class="img1" >  </div>';
+            }
+            $(".homebanner").html(html);
+            if($(window).width()>1030)
+            {
+            var pht = $('#myCarousel').height();
+              $('.ctcl1 .image').css({'height': pht});
+               $('#clima').css({'height': pht});
+            }
+
         },
         error: function (errorMessage) {
+
         }
     });
 
-
+});
 
 //var x = document.getElementById("demo");
 getLocation();

@@ -41,6 +41,7 @@
                }
             }
          },
+         "partial_match" : true,
          "place_id" : "ChIJM5YYsYLFADsR8GEzRsx1lFU",
          "types" : [ "administrative_area_level_1", "political" ]
       }

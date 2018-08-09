@@ -554,26 +554,21 @@ textarea#bnr {
 .placeimage img {
     width: 100%;
     height: auto;
-    border-top-left-radius: 10px;
-border-top-right-radius: 10px;
 }
 .placeimage {
     overflow-x: hidden;
-      height: 185px;
-    border-top-left-radius: 10px;
-border-top-right-radius: 10px;
+      height: 230px;
 }
 .placeimage::-webkit-scrollbar
 {
   display: none;
 }
 .design {
-    margin-right: 25px;
+    margin-right: 15px;
     background: #ffffff;
-    border: 1px solid whitesmoke;
-    border-radius: 10px;
     box-shadow: 2px 2px 6px rgba(32, 33, 36, 0.48);
-        height: 300px !important;
+    min-height: 350px !important;
+    margin-bottom: 25px;
 }
 #tourism
 {
@@ -590,10 +585,14 @@ border-top-right-radius: 10px;
         margin-top: 10px;
 }
 .placedata h4 {
-  margin: 5px 0 5px 12px;
+    margin: 5px 0 5px 12px;
     font-family: Raleway-bold;
-    font-size: 20px;
+    font-size: 18px;
     color: #ffffff;
+    line-height: 20px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 .jssorl-009-spin img {
             animation-name: jssorl-009-spin;
@@ -649,7 +648,7 @@ div#dvDistance h5 {
 {
   width: 105px;
 }
-.vc_row {
+.vc_row , .splaces{
     margin-left: 0px !important ;
     margin-right: 0px !important;
 }
@@ -658,7 +657,7 @@ div#dvDistance h5 {
   padding-left: 0px !important;
   padding-right: 0px !important;
 }
-#distanceinfo .row
+#distanceinfo .row , #visitrow
 {
   margin-left: 0px;
   margin-right: 0px;
@@ -690,10 +689,10 @@ div#suggestionrow {
 }
 .bgoverlay {
   height: 40px;
-position: absolute;
-top: 145px;
-background: linear-gradient(to bottom,rgba(0,0,0,0.05),rgba(0,0,0,.85));
-width: 100%;
+  position: absolute;
+  top: 188px;
+  background: linear-gradient(to bottom,rgba(0,0,0,0.05),rgba(0,0,0,.85));
+  width: 100%;
 }
 .GmOjKf {
     padding: 0 10px 0 10px;
@@ -708,4 +707,37 @@ width: 100%;
 }
 div#rnav {
     right: 0px !important;
+}
+.placedata p {
+    display: none;
+}
+.placedata h6 {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-family: Raleway-SemiBold;
+    padding-left: 15px;
+        font-size: 14px;
+}
+.row.splaces {
+    padding-left: 40px;
+    padding-right: 40px;
+}
+.splaces .col-lg-4 {
+    padding: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+.design1 {
+    background: #ffffff;
+    box-shadow: 2px 2px 6px rgba(32, 33, 36, 0.48);
+    height: 290px !important;
+    border-radius: 5px;
+}
+.design1 .bgoverlay {
+    top: 192px;
+}
+.design1 .placeimage, .design1 .placeimage img
+{
+border-top-left-radius: 5px;
+border-top-right-radius: 5px;
 }

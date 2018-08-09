@@ -1,4 +1,20 @@
 <?php
+if (!file_exists('bingcached')) {
+    mkdir('bingcached', 0777, true);
+}
+$_GET["q"] = isset($_GET["q"])? strtolower($_GET["q"]):"";
+$arraylist=array();
+
+
+if(trim ($_GET["q"])==""){
+  echo json_encode( $arraylist );
+return;
+}
+ob_start();
+
+header('content-type: application/json; charset=utf-8');
+header("access-control-allow-origin: *");
+
 function get_web_page( $url )
 {
     $user_agent='Mozilla/5.0 (Windows NT 6.1; rv:8.0) Gecko/20100101 Firefox/8.0';
@@ -21,7 +37,6 @@ function get_web_page( $url )
     $ch      = curl_init( $url );
     curl_setopt_array( $ch, $options );
     $content = curl_exec( $ch );
-
     $err     = curl_errno( $ch );
     $errmsg  = curl_error( $ch );
     $header  = curl_getinfo( $ch );
@@ -32,23 +47,46 @@ function get_web_page( $url )
     $header['content'] = $content;
     return $header;
 }
-$url = "https://www.google.co.in/search?q=".$_GET["state"]."Tourism&num=100&safe=off&espv=2&source=lnms&tbm=isch";
 
-$url =str_replace(" ","+", $url);
+$cachetime = 18000000000;
+$cachefile = 'bingcached/'.$_GET["q"].'.html';
+  if (file_exists($cachefile) && time() - $cachetime < filemtime($cachefile)) {
+        ob_start();
+        include($cachefile);
+        $myvar = ob_get_contents();
+        exit;
+      }
 
-$content = get_web_page( $url )["content"];
-$content1 = explode("{",$content);
-//echo $content;
-  $arraylist1=array();
+
+$arraylist=array();
+$preview = isset($_GET["preview"])?$_GET["preview"]:"";
+
+$url = "http://api.bing.com/osjson.aspx?query=".urlencode($_GET["q"]);
+$content = (get_web_page( $url )["content"]);
+$content1 = explode(']]',$content)[0];
+$content2 = explode(',[',$content1)[1];
+$content1 = explode(",",$content2);
 for ($i=0; $i< sizeof($content1); $i++){
-    if (strpos($content1[$i], '}') !== false){
-        $content2 =  "{".explode("}",$content1[$i])[0]."}" ;
-        $jArr = json_decode($content2, true);
-        if(isset($jArr["tu"])){
-            $imgobj=array();
-            $imgobj["url"] = $jArr["ou"];
-          array_push($arraylist1,$imgobj);
-        }
-    }
+  $obj=array();
+  $t= str_replace('"','', $content1[$i]);
+  if($t){
+    $obj["title"]  = $t;
+    array_push($arraylist,$obj);
+  }
 }
-?>
+
+if($preview){
+   echo "<pre>";
+   print_r($arraylist);
+   echo "</pre>";
+}else{
+      if (count($arraylist)>0){
+        $cached = fopen($cachefile, 'w');
+        fwrite($cached, json_encode($arraylist));
+        fclose($cached);
+      }
+     echo json_encode( $arraylist );
+
+}
+
+ ?>
