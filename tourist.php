@@ -9,7 +9,7 @@ if (file_exists($fileloc.$ql)) {
     //echo $myObj;
 }
 else {
-include_once('simple_html_dom.php');
+include('simple_html_dom.php');
 $q= $_GET["q"];
 $q = str_replace('_',' ',$_GET["q"]);
 $url = "https://www.google.co.in/complete/search?client=travel_immersive&hl=en-IN&q=".$q;
@@ -49,7 +49,7 @@ fclose($cached);
 }
 if (isset($_GET["preview"])){
 echo "<pre>";
-$myJSON=json_decode($myObj);
+$myJSON=json_decode($myJSON);
 print_r($myJSON);
 echo "</pre>";
 }

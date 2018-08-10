@@ -50,7 +50,7 @@ fclose($cached);
 }
 if (isset($_GET["preview"])){
 echo "<pre>";
-$myJSON=json_decode($myObj);
+$myJSON=json_decode($myJSON);
 print_r($myJSON);
 echo "</pre>";
 }

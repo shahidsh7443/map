@@ -67,7 +67,7 @@ function addEvent(id,relationId){
 				x=(x+tipw>$(document).scrollLeft()+$(window).width())? x-tipw-(20*2) : x
 				y=(y+tiph>$(document).scrollTop()+$(window).height())? $(document).scrollTop()+$(window).height()-tiph-10 : y
 				$('#'+id).css({'fill':map_config[id]['downColor']});
-				$('#map-tip').show().html("------"+map_config[id]['hover']);
+				$('#map-tip').show().html(map_config[id]['hover']);
 				$('#map-tip').css({left:x, top:y})
 			})
 			_obj.on('touchend', function(){

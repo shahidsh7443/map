@@ -1,4 +1,3 @@
-
 <?php
 $q= $_GET["q"];
 $suggestedlist;
@@ -8,7 +7,7 @@ if (file_exists($fileloc.$q)) {
     ob_start();
     $myJSON = file_get_contents($fileloc.$q);
 }else{
-    include_once('simple_html_dom.php');
+    include('simple_html_dom.php');
     $url = "https://www.google.co.in/complete/search?client=travel_immersive&hl=en-IN&q=".$q;
     $content = get_web_page($url);
     $str =  $content['content'];

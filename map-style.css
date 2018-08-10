@@ -500,6 +500,7 @@ width: 1200px;
 }
 div#distanceinfo {
     padding: 0;
+    display: none;
 }
 textarea#bnr {
     margin-bottom: 20px;
@@ -695,7 +696,7 @@ div#suggestionrow {
   width: 100%;
 }
 .GmOjKf {
-    padding: 0 10px 0 10px;
+    padding: 0 10px 0 0px;
 }
 #leftnav
 {
@@ -715,8 +716,8 @@ div#rnav {
     margin-top: 0px;
     margin-bottom: 0px;
     font-family: Raleway-SemiBold;
-    padding-left: 15px;
-        font-size: 14px;
+    padding-left: 0px;
+    font-size: 14px;
 }
 .row.splaces {
     padding-left: 40px;
@@ -740,4 +741,51 @@ div#rnav {
 {
 border-top-left-radius: 5px;
 border-top-right-radius: 5px;
+}
+@media only screen and (max-width:480px)
+{
+  .carousel-inner.cin .item img {
+    height: 225px !important;
+    width: 100%;
+}
+.tcontent {
+    padding: 0 20px 40px 20px;
+}
+div#distanceinfo {
+    display: none;
+}
+.item.style1.image-gallery {
+    display: none;
+}
+.dcontent {
+    display: none;
+}
+.row.splaces {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.design {
+    margin-right: 0px;
+    min-height: 250px !important;
+}
+.bgoverlay {
+    top: 135px;
+}
+.placeimage {
+    overflow-x: hidden;
+    height: 175px;
+}
+.placedata h6 {
+    padding-left: 10px;
+}
+.GmOjKf {
+    padding: 0px 0px 0 0px;
+}
+.tcontent {
+    overflow: hidden;
+    word-wrap: break-word;
+}
+.GmOjKf div {
+    padding: 0 10px 0 10px;
+}
 }

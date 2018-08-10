@@ -24,7 +24,7 @@
 	},
 	'map_3':{
 		'hover': 'ASSAM',
-		'url':'http://localhost/wikilogy/mpdata.php?q=asssam&state=1&id=3',
+		'url':'http://localhost/wikilogy/mpdata.php?q=assam&state=1&id=3',
 		'target':'same_window',
 		'upColor':'#EBECED',
 		'overColor':'#FFEE88',
@@ -87,7 +87,7 @@
 	},
 	'map_10':{
 		'hover': 'JAMMU AND KASHMIR',
-		'url':'http://localhost/wikilogy/mpdata.php?q=jammu_and_kashmir&state=1&id=10',
+		'url':'http://localhost/wikilogy/mpdata.php?q=jammu%20and%20kashmir&state=1&id=10',
 		'target':'same_window',
 		'upColor':'#EBECED',
 		'overColor':'#FFEE88',

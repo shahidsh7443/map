@@ -12,7 +12,7 @@ if (file_exists($fileloc.$city)) {
     ob_start();
     $contents = file_get_contents($fileloc.$city);
 }else{
-    $url="https://maps.googleapis.com/maps/api/geocode/json?&address=".urlencode($city)."&key=AIzaSyBIi0IcN-SFCdy9mQmkSTzxgq_BhX-ibJE";
+    $url="https://maps.googleapis.com/maps/api/geocode/json?&address=".urlencode($city)."&key=AIzaSyAzTjk2HWJgAbl9XF2WFQNI1fMq-Jy2PuA";
     $contents = file_get_contents($url);
     $contents1=json_decode($contents);
         $cached = fopen($fileloc.$city, 'w');
